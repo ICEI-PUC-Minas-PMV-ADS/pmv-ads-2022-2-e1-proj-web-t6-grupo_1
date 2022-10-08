@@ -96,7 +96,141 @@ subcategorias:
                 </ul>
         </li>
         <li>Segurança</li>
-    </ol>
+        <ul type="Square">
+            <li>Profissional
+                <ul>
+                    <li>Falta de profissional de segurança</li>
+                    <li>Profissional de segurança desqualificado</li>
+                    <li>Remuneração</li>
+                </ul>
+            </li>
+            <li>Infraestrutura
+                <ul>
+                    <li>Tempo de espera de atendimento</li>
+                    <li>Atendimento ruim</li>
+                    <li>Equipamentos(danificados, ultrapassados, etc.)</li>
+                    <li>Falta de equipamentos (armas, uniformes, coletes, etc)</li>
+                </ul>
+            </li>
+            <li>Crime
+                <ul>
+                    <li>Trafico de drogas</li>
+                    <li>Roubo</li>
+                    <li>Homicídio</li>
+                    <li>Violência Sexual</li>
+                </ul>
+            </li>
+        </ul>
+    <li>Infraestrutura
+        <ul type="square">
+            <li>Saneamento
+                <ul>
+                    <li>Água
+                        <ul>
+                            <li>Falta de água tratada</li>
+                            <li> Estrutura danificada</li>
+                        </ul>
+                    </li>
+                    <li>Esgoto
+                        <ul>
+                            <li>Falta de coleta</li>
+                            <li>Descarte irregular</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Energia
+                <ul>
+                    <li>Falta de energia elétrica</li>
+                    <li>Estrutura danificada</li>
+                    <li>Estrutura irregular</li>
+                </ul>
+            </li>
+            <li>Mobilidade urbana
+                <ul>
+                    <li>Estrutura Viária
+                        <ul>
+                            <li>Pavimento
+                                <ul>
+                                    <li>Trincas no pavimento</li>
+                                    <li>Buracos no pavimento</li>
+                                    <li>Sem pavimento</li>
+                                </ul>
+                            </li>
+                            <li> Sinalização
+                                <ul>
+                                    <li>Sinalização insuficiente</li>
+                                    <li>Sinalização incorreta</li>
+                                    <li>Sem sinalização</li>
+                                </ul>
+                            </li>
+                            <li>Calçada
+                                <ul>
+                                    <li>Acessibilidade</li>
+                                    <li>Trincas na calçada</li>
+                                    <li>Buracos na calçada</li>
+                                    <li>Sem calçada</li>
+                                </ul>
+                            </li>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Transporte público
+                <ul>
+                    <li>Falta de transporte público</li>
+                    <li>Disponbilidade (intervalo de horários longos)</li>
+                    <li>Pontualidade</li>
+                    <li>Danificados, ultrapassados, etc.</li>
+                    <li>Acessibilidade</li>
+                    <li>Superlotação</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+<li>Meio Ambiente
+    <ul type="square">
+        <li>Desmatamento</li>
+        <li>Poluição do ar</li>
+        <li>Poluição da água</li>
+        <li>Poluição sonora</li>
+        <li>Animal silvestre</li>
+        <li>Incêndio</li>
+        <li>Descarte irregular de lixo</li>
+        <li>Falta de limpeza urbana</li>
+    </ul>
+</li>
+<li>Ajude
+    <ul type="square">
+        <li>Alimento
+            <ul>
+                <li>Local de entrega</li>
+                <li>Local de recebimento</li>
+            </ul>
+        </li>
+        <li>Agasalho 
+            <ul>
+                <li>Local de entrega</li>
+                <li>Local de recebimento</li>
+            </ul></li>
+        <li>Reciclagem
+            <ul>
+                <li>Local de entrega</li>
+                <li>Local de recebimento</li>
+            </ul>
+        </li>
+        <li>Trabalho
+            <ul>
+                <li>Vaga de trabalho</li>
+                <li>Quero trabalhar
+
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+</ol>
     
 ## Justificativa
 
