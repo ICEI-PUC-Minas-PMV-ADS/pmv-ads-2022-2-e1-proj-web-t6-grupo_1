@@ -18,7 +18,7 @@ buracos na capital mineira. Na temporada sem chuva do ano, a média de alerta fo
 36 por dia. Já no período chuvoso, a média passou para 149 diariamente, número
 quatro vezes maior.
 
-O projeto DatasBH, visa facilitar, agilizar a resposta e melhorar a comunicação
+O projeto DataBH, visa facilitar, agilizar a resposta e melhorar a comunicação
 entre os moradores e frequentadores com os responsáveis para realizar mudanças
 na cidade de Belo Horizonte. Além disso, o layout do website irá oferecer a
 possibilidade de interação entre usuários, mostrando se alguma reclamação no tópico
