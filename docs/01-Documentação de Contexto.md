@@ -1,28 +1,65 @@
 # Introdução
 
-Cada dia que passa, a informação tem se tornado o ativo mais importante na vida de pessoas e das organizações. Informações precisas, imparciais e obtidas no momento exato são fundamentais para se orientar nesse mundo de grandes incertezas. 
+Com o passar dos anos, a inserção da tecnologia na sociedade tem se
+expandido cada dia mais, e com ela a facilidade da comunicação entre indivíduos. A
+Ouvidoria pública de acordo com o site oficial da prefeitura de Belo Horizonte, são
+unidades administrativas responsáveis pelo tratamento das manifestações relativas
+às políticas e aos serviços públicos prestados sob qualquer desenho ou regime, deve
+receber, analisar e responder as manifestações em linguagem simples, clara, concisa
+e objetiva operando como ponte entre o cidadão e a municipalidade. Muitas vezes se
+mostra incapaz de sanar reclamações e exigências feitas pelo povo, como a falta de
+professores nas escolas, buracos nas ruas, falta de profissionais da saúde nos locais
+de atendimento, entre muitos outros.
 
-Em paralelo, tem-se observado um movimento em todo o mundo de resgate do nacionalismo e isso tem acirrado as discussões entre correntes de pensamento antagônicos. Diversos movimentos radicais têm surgido em diferentes regiões do mundo e, de maneira cada vez mais frequente, têm se utilizado dos canais de informação através de notícias falsas para arrebanhar novos simpatizantes. Ao mesmo tempo, alguns meios de comunicação menos confiáveis, acabam adotando um editorial que limitam o perfil de notícias apresentadas, o comprometendo o universo de informação visualizado por seus usuários. Isto é muito prejudicial para a democracia e a liberdade. Ainda, nas redes sociais, as escolhas dos algoritmos de inteligência artificial têm criado uma restrição no tipo de informação que é apresentada aos usuários, conforme discutido por Bakshy et. al (2015).
+Segundo: (“Cresceu Em 400% o Número de Buracos Em Belo Horizonte –
+Edição Do Brasil”), com base em dados retirados de diversos aplicativos de trânsito
+feitos pelos próprios usuários, foi relatado um aumento de 400% no número de
+buracos na capital mineira. Na temporada sem chuva do ano, a média de alerta foi de
+36 por dia. Já no período chuvoso, a média passou para 149 diariamente, número
+quatro vezes maior.
 
-Diante disso, torna-se fundamental que existam canais informação e mecanismos que permitam ao usuário acessar um conteúdo diverso e sem vieses que limitem a sua condição de se informar de maneira adequada diante dos fatos que acontecem no mundo. 
+O projeto DatasBH, visa facilitar, agilizar a resposta e melhorar a comunicação
+entre os moradores e frequentadores com os responsáveis para realizar mudanças
+na cidade de Belo Horizonte. Além disso, o layout do website irá oferecer a
+possibilidade de interação entre usuários, mostrando se alguma reclamação no tópico
+desejado já foi realizada, sua data, e até mesmo sua recorrência. 
 
 
 ## Problema
-Conforme exposto, o problema que se busca resolver com este projeto é a limitação que os canais tradicionais de informação têm criado para os usuários que buscam se informar sobre os diversos assuntos do seu cotidiano, com confiabilidade, agilidade e imparcialidade.
-
+Com o auxílio do DatasBH espera-se maior eficácia quanto a resolução das
+irregularidades de todos os âmbitos como também a falta de um local adequado para
+a realização de reclamação de forma mais objetiva, e assim, ajudar os ocupantes da
+cidade a levar o mesmo até as pessoas responsáveis com o intuito de solucionar com
+mais eficácia o questionamento. 
 
 ## Objetivos
 
-O objetivo geral deste trabalho é a criação de um portal de notícias que apresente ferramentas de fácil uso e que permita o acesso a um universo variado e isento de notícias e informações sobre fatos em diversas áreas.
+O objetivo geral deste, é a criação de uma ferramenta em que as pessoas
+possam denunciar/reclamar os problemas observados na cidade com a certeza de
+que estas chegarão com mais detalhes nas mãos dos responsáveis.
 
 Como objetivos específicos, podemos ressaltar:
-<ul>
- <li> Fornecer funcionalidades que permitam interagir com as notícias apresentadas por meio de comentários e pelo compartilhamento das notícias em redes sociais;
- <li> Integrar com centrais de notícias espalhadas na Internet.
- <li> Permitir a criação de canais personalizados por usuário com tópicos de interesse individual.
-Justificativa
 
+<ul>
+ <li> Fornecer uma plataforma adequada através da qual as pessoas poderão
+denunciar problemas de quaisquer âmbitos na cidade de Belo Horizonte;
+ <li> O usuário conseguirá visualizar se uma outra pessoa já denunciou anteriormente
+o mesmo problema;
+ <li> Facilitar a queixa sem que o denunciante passe por processos demorados e
+burocráticos, como exemplo, atendentes eletrônicos, fila de espera ou até mesmo
+falta de profissionais na área;
+ <li> Fornecer funcionalidade de registro de problema, sendo exigido a informação de
+localização GPS ou endereço do problema e a seleção das seguintes categorias e
+subcategorias:
+  Saúde
 </ul>
+<ol>
+ <li> 1. Profissional </li>
+ <ol type= "1">
+  <li> 1.1 Falta de profissional de medicina
+   <li> 1.2 Profissional de medicina desqualificado
+    <li> 1.3 Remuneração
+</ol>
 
 ## Justificativa
 
