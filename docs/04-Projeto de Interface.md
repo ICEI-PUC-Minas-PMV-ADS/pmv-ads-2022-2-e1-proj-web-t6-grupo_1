@@ -1,35 +1,44 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Dentre as preocupações para a montagem da interface do sistema, estamos estabelecendo foco em questões como agilidade, acessibilidade e usabilidade. Desta forma, o projeto tem uma identidade visual padronizada em todas as telas que são projetadas para funcionamento em desktops e dispositivos móveis.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+Os diagramas apresentados nas Figuras 2 e 3 mostras o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o ambiente Figma do projeto.
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+![IMG_6520](https://user-images.githubusercontent.com/94881508/194716104-bf137c86-d3fd-4879-9380-c732f80823b6.JPG)
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+![IMG_6521](https://user-images.githubusercontent.com/94881508/194716106-66e55038-bca6-487c-b3d3-dec63a22c1dc.JPG)
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. As telas do sistema apresentam uma estrutura comum que é apresentada na Figura 4. Nesta estrutura, existem 3 grandes blocos, descritos a seguir. São eles:
+- **Cabeçalho** – local onde são dispostos elementos fixos de identidade (logo) e navegação principal do site (menu da aplicação);
+- **Conteúdo** – apresenta o conteúdo da tela em questão;
+-	**Barra lateral** – apresenta os elementos de navegação secundária, geralmente associados aos elementos do bloco de conteúdo.
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+![Imagem_1](https://user-images.githubusercontent.com/94881508/194716298-f1338945-0674-419e-b981-f73af784fec7.png)
+
+### Tela - Home-Page
+
+A tela de home-page mostra denuncias feitas no período que o usuário acessa o site na área de Conteúdo (imagem, título, data, ícone de compartilhamento e curtida). O bloco da Barra Lateral traz as denúncias em destaque da semana.
+Dessa forma, com base na estrutura da Figura 4, na tag <header> estarão presentes os seguintes elementos:
+-	Componente de pesquisa que irá transferir o usuário para uma nova página para facilitar a busca;
+-	Componente de lista de categorias que dá acesso às páginas de cada uma das seções disponibilizadas como também a logo;
+-	Botão para ser realizada denúncia;
+-	Botão com a opção de fazer login ou, caso já esteja logado, exibe a foto do usuário.
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+ ![Sem título2](https://user-images.githubusercontent.com/94881508/194716399-796124b9-fdef-452b-ada3-2225fcb33abe.png)
+ 
+ ![image](https://user-images.githubusercontent.com/94881508/194716425-6bee1c44-b638-4dfd-961a-19c397cad2d3.png)
+
+### Tela - Reclamações
+ 
+Na tela de reclamações, dentro da tag `<header>` estará presente a mesma estrutura da homepage, com exceção de que a barra de pesquisa ficará na `<nav>`.
+ 
+A tag `<article>` também apresentará os mesmos elementos da home-page com a única diferença sendo as denúncias mostradas, que serão filtradas com base nos tópicos que o usuário já registrou queixa ou curtiu.
+ 
+O bloco `<aside>` apresenta os mesmos elementos da Home-Page.
+
+ ![image](https://user-images.githubusercontent.com/94881508/194716474-5b90cc37-4d1e-4043-9a8c-633cd4c8adfb.png)
