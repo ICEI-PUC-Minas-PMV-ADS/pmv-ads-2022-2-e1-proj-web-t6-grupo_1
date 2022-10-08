@@ -1,16 +1,12 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
-
 Nesta seção são apresentados os detalhes técnicos da solução criada pela equipe, tratando dos componentes que fazem parte da solução e do ambiente de hospedagem da solução.
 
 ## Diagrama de componentes
 
 Os componentes que fazem parte da solução são apresentados na Figura a seguir.
 
-![Diagrama de Componentes](https://user-images.githubusercontent.com/112135152/194714113-ba517c2d-b7aa-4fda-96eb-a2de82cd6fd8.png)
-
-<center>Figura 13 – Diagrama de Componentes</center>
+![Sem título2](https://user-images.githubusercontent.com/94881508/194715924-544fb331-73e3-4ce4-ab0e-3c36ceaf7c73.png)
 
 A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema  
