@@ -26,7 +26,7 @@ desejado já foi realizada, sua data, e até mesmo sua recorrência.
 
 
 ## Problema
-Com o auxílio do DatasBH espera-se maior eficácia quanto a resolução das
+Com o auxílio do DataBH espera-se maior eficácia quanto a resolução das
 irregularidades de todos os âmbitos como também a falta de um local adequado para
 a realização de reclamação de forma mais objetiva, e assim, ajudar os ocupantes da
 cidade a levar o mesmo até as pessoas responsáveis com o intuito de solucionar com
