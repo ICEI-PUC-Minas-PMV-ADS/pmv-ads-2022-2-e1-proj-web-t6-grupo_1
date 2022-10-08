@@ -11,8 +11,8 @@ mostra incapaz de sanar reclamações e exigências feitas pelo povo, como a fal
 professores nas escolas, buracos nas ruas, falta de profissionais da saúde nos locais
 de atendimento, entre muitos outros.
 
-Segundo: (“Cresceu Em 400% o Número de Buracos Em Belo Horizonte –
-Edição Do Brasil”), com base em dados retirados de diversos aplicativos de trânsito
+Segundo a notícia “Cresceu Em 400% o Número de Buracos Em Belo Horizonte –
+Edição Do Brasil” (https://edicaodobrasil.com.br/2021/04/09/cresceu-em-400-o-numero-de-buracos-na-capital-mineira/), com base em dados retirados de diversos aplicativos de trânsito
 feitos pelos próprios usuários, foi relatado um aumento de 400% no número de
 buracos na capital mineira. Na temporada sem chuva do ano, a média de alerta foi de
 36 por dia. Já no período chuvoso, a média passou para 149 diariamente, número
@@ -53,7 +53,7 @@ localização GPS ou endereço do problema e a seleção das seguintes categoria
 subcategorias:
 </ul>
  <ol>
-        <li>Saúde
+ <li><strong>Saúde</strong>
             <ul type="square"><li>Profissional</li>
                 <ul>
                     <li>Falta de profissional de medicina</li>
@@ -73,7 +73,7 @@ subcategorias:
                 </ul>
             </ul>
         </li>
-        <li>Educação
+        <li><strong>Educação</strong>
             <ul type="square"><li>Profissional</li> <ul>
                 <li>Falta de professores</li>
                 <li>Profissional educador desqualificado</li>
@@ -95,7 +95,7 @@ subcategorias:
         </ul></ul>
                 </ul>
         </li>
-        <li>Segurança</li>
+        <li><strong>Segurança</strong></li>
         <ul type="Square">
             <li>Profissional
                 <ul>
@@ -121,7 +121,7 @@ subcategorias:
                 </ul>
             </li>
         </ul>
-    <li>Infraestrutura
+    <li><strong>Infraestrutura</strong>
         <ul type="square">
             <li>Saneamento
                 <ul>
@@ -189,7 +189,7 @@ subcategorias:
             </li>
         </ul>
     </li>
-<li>Meio Ambiente
+<li><strong>Meio Ambiente</strong>
     <ul type="square">
         <li>Desmatamento</li>
         <li>Poluição do ar</li>
@@ -201,7 +201,7 @@ subcategorias:
         <li>Falta de limpeza urbana</li>
     </ul>
 </li>
-<li>Ajude
+<li><strong>Ajude</strong>
     <ul type="square">
         <li>Alimento
             <ul>
