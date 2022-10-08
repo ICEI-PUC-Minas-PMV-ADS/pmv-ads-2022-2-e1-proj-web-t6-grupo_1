@@ -29,4 +29,9 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 O site utiliza a plataforma do Heroku como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL:
-![GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-hemolife)
+
+https://link_exemplo.herokuapp.com/
+
+A publicação do site no Heroku é feita por meio de uma submissão do projeto (push) via git para o repositório remoto que se encontra no endereço a seguir.
+
+https://git.heroku.com/link_exemplo.git
