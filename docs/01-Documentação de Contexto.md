@@ -224,11 +224,6 @@ subcategorias:
             <ul>
                 <li>Vaga de trabalho</li>
                 <li>Quero trabalhar
-
-                </li>
-            </ul>
-        </li>
-    </ul>
 </li>
 </ol>
     
