@@ -1,30 +1,46 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+  Nesse projeto temos como principal objetivo ajudar os Belorizontinos e frequentadores a terem um local seguro e confiável apara relatar os problemas que encontram na cidade e coma a certeza de que os seus relatos serão levados aos responsáveis. 
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+|Dados pessoais|Ocupações           |Frustações                    |Histórias
+|--------------|--------------------|------------------------------|---------------------------------------------
+| Dilma Célia  | Médica, dona de    | Falta de recursos necessário |Dilma diz que enfrenta dificuldades para ajudar
+|    49 anos   | uma loja de roupas.|  para ajudar.                |as pessoas por não ter recurso o suficiente na UPA
+|              |                    |                              |que trabalha.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+|Dados pessoais    |Ocupações               |Frustações                          |Histórias
+|------------------|------------------------|------------------------------------|----------
+|Alexandre Portes  | Motorista de aplicativo| Como trabalha o dia todo nas       |Alexandre diz que enfrenta dificuldades no
+|    23 anos       |                        | ruas de Belo Horizonte, consegue   |seu trabalho trabalho por ter, por exemplo, 
+|                  |                        | ver várias inconsistências nas ruas| muitos buracos nas ruas, e assim ter o risco
+|                  |                        |                                    |de se acidentar.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+|Dados pessoais    |Ocupações               |Frustações                          |Histórias
+|------------------|------------------------|------------------------------------|----------
+|Dalva Parreiras   | Manicure               | Observa a falta de professores     |Dalva diz que percebe que seus 
+|     30 anos      |                        | e materiais didáticos nas escolas. |filhos muitas vezes não têm 
+|                  |                        |                                    |aula na escola por falta de recursos.
+|                  |                        |                                    |
 
+|Dados pessoais    |Ocupações               |Frustações                          |Histórias
+|------------------|------------------------|------------------------------------|----------
+|  Geraldo Magela  | Lojista                | Observa a falta de médicos         |Geraldo disse que a maior parte das 
+|     60 anos      |                        | nos locais de atendimento.         |vezes que procura um atendimento em 
+|                  |                        |                                    |hospitais públicos percebe a falta de 
+|                  |                        |                                    |médicos lá.
+
+
+
+
+
+
+
+ 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
@@ -42,7 +58,7 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
 
 ### Requisitos Funcionais
 
@@ -76,7 +92,7 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
