@@ -1,46 +1,37 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Cada dia que passa, a informação tem se tornado o ativo mais importante na vida de pessoas e das organizações. Informações precisas, imparciais e obtidas no momento exato são fundamentais para se orientar nesse mundo de grandes incertezas. 
+
+Em paralelo, tem-se observado um movimento em todo o mundo de resgate do nacionalismo e isso tem acirrado as discussões entre correntes de pensamento antagônicos. Diversos movimentos radicais têm surgido em diferentes regiões do mundo e, de maneira cada vez mais frequente, têm se utilizado dos canais de informação através de notícias falsas para arrebanhar novos simpatizantes. Ao mesmo tempo, alguns meios de comunicação menos confiáveis, acabam adotando um editorial que limitam o perfil de notícias apresentadas, o comprometendo o universo de informação visualizado por seus usuários. Isto é muito prejudicial para a democracia e a liberdade. Ainda, nas redes sociais, as escolhas dos algoritmos de inteligência artificial têm criado uma restrição no tipo de informação que é apresentada aos usuários, conforme discutido por Bakshy et. al (2015).
+
+Diante disso, torna-se fundamental que existam canais informação e mecanismos que permitam ao usuário acessar um conteúdo diverso e sem vieses que limitem a sua condição de se informar de maneira adequada diante dos fatos que acontecem no mundo. 
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Conforme exposto, o problema que se busca resolver com este projeto é a limitação que os canais tradicionais de informação têm criado para os usuários que buscam se informar sobre os diversos assuntos do seu cotidiano, com confiabilidade, agilidade e imparcialidade.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral deste trabalho é a criação de um portal de notícias que apresente ferramentas de fácil uso e que permita o acesso a um universo variado e isento de notícias e informações sobre fatos em diversas áreas.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos, podemos ressaltar:
+<ul>
+ <li> Fornecer funcionalidades que permitam interagir com as notícias apresentadas por meio de comentários e pelo compartilhamento das notícias em redes sociais;
+ <li> Integrar com centrais de notícias espalhadas na Internet.
+ <li> Permitir a criação de canais personalizados por usuário com tópicos de interesse individual.
+Justificativa
+
+</ul>
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Em estudo da Reuters, realizado com um grupo de 74 mil pessoas, em 37 países diferentes, fica claro o volume preocupante de informações falsas sendo propagadas  (NEWMAN et al; 2019). O estudo apresenta que no brasil 35% dos entrevistados informam que as informações consumidas são completamente inventadas. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Adicionalmente, há uma falta de canais de notícias isentos e objetivos que permitam aos usuários, leitores frequentes de jornais, possam ter a mesmo experiência dos jornais tradicionais em ferramentas digitais. 
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Embora todas as pessoas possam se beneficiar de soluções isentas para se informarem, o foco deste trabalho está no público que tem o hábito de ler notícias nos contextos das suas áreas de atuação com o intuito de ampliarem sua condição de atuarem profissionalmente.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mulheres entre 30 e 45 anos que se encontram em oportunidades de trabalho que exigem constante atualização e que fazem uso frequente de computadores e dispositivos móveis para se atualizarem com tópicos que vão além dos assuntos relacionados às suas atividades profissionais
