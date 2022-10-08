@@ -6,16 +6,8 @@
 
 |Dados pessoais|Ocupações           |Frustações                    |Histórias
 |--------------|--------------------|------------------------------|---------------------------------------------
-| Dilma Célia  | Médica, dona de    | Falta de recursos necessário |Dilma diz que enfrenta dificuldades para ajudar
-|    49 anos   | uma loja de roupas.|  para ajudar.                |as pessoas por não ter recurso o suficiente na UPA
-|              |                    |                              |que trabalha.
-
-|Dados pessoais    |Ocupações               |Frustações                          |Histórias
-|------------------|------------------------|------------------------------------|----------
-|Alexandre Portes  | Motorista de aplicativo| Como trabalha o dia todo nas       |Alexandre diz que enfrenta dificuldades no
-|    23 anos       |                        | ruas de Belo Horizonte, consegue   |seu trabalho trabalho por ter, por exemplo, 
-|                  |                        | ver várias inconsistências nas ruas| muitos buracos nas ruas, e assim ter o risco
-|                  |                        |                                    |de se acidentar.
+| Dilma Célia, 49 anos  | Médica, dona de uma loja de roupas.   | Falta de recursos necessário para ajudar. | Dilma diz que enfrenta dificuldades para ajudar as pessoas por não ter recurso o suficiente na UPA que trabalha. |
+| Alexandre Portes, 23 anos | Motorista de aplicativo | Como trabalha o dia todo nas ruas de Belo Horizonte, consegue ver várias inconsistências nas ruas. | Alexandre diz que enfrenta dificuldades no seu trabalho trabalho por ter, por exemplo, muitos buracos nas ruas, e assim ter o risco de se acidentar. |
 
 |Dados pessoais    |Ocupações               |Frustações                          |Histórias
 |------------------|------------------------|------------------------------------|----------
