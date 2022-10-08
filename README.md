@@ -6,7 +6,7 @@
 
 `EIXO 1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto DataBH tem como objetivo fornecer aos indivíduos uma ferramenta para denunciar problemas municipais em Belo Horizonte.
 
 ## Integrantes
 
@@ -18,7 +18,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Nome completo do professor 1
+* Nathalia Assis Valentim
 
 ## Instruções de utilização
 
