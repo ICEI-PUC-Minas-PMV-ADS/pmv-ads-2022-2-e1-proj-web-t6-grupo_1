@@ -51,24 +51,65 @@ falta de profissionais na área;
  <li> Fornecer funcionalidade de registro de problema, sendo exigido a informação de
 localização GPS ou endereço do problema e a seleção das seguintes categorias e
 subcategorias:
-  Saúde
 </ul>
-<ol>
- <li> 1. Profissional </li>
- <ol type= "1">
-  <li> 1.1 Falta de profissional de medicina
-   <li> 1.2 Profissional de medicina desqualificado
-    <li> 1.3 Remuneração
-</ol>
-
+ <ol>
+        <li>Saúde
+            <ul type="square"><li>Profissional</li>
+                <ul>
+                    <li>Falta de profissional de medicina</li>
+                    <li>Profissional de medicina desqualificado</li>
+                    <li>Remuneração
+                    </li>
+                </ul>
+        </ul>
+            <ul type="square"><li>Infraestrutura</li>
+                <ul>
+                    <li>Tempo de espera de atendimento</li>
+                    <li>Atendimento Ruim</li>
+                    <li>Equipamentos (Danificados, ultrapassados, etc.</li>
+                    <li>Falta de equipamentos médicos</li>
+                    <li>Falta de medicamentos</li>
+                    <li>Superlotação</li>
+                </ul>
+            </ul>
+        </li>
+        <li>Educação
+            <ul type="square"><li>Profissional</li> <ul>
+                <li>Falta de professores</li>
+                <li>Profissional educador desqualificado</li>
+                <li>Remuneração</li>
+            </ul>
+            </ul>
+            <ul type="square">
+                <li> Infraestrutura</li>
+                <ul> <li>Falta de livro didático</li>
+                <li>Falta de material didático  (caderno, lápis, etc.)</li>
+                <li> Eqipamentos (danificado, ultrapassados, etc.)</li>
+            <li>Falta de equipamentos (computador, projetor, etc)</li></ul> 
+            </ul>
+            <ul type="square">
+                <li>Ambiente</li>
+            <ul><li>Indisciplina dos estudantes</li>
+            <li> Uso de drogas</li>
+            <li>Violência com professores, servidores, estudantes</li>
+        </ul></ul>
+                </ul>
+        </li>
+        <li>Segurança</li>
+    </ol>
+    
 ## Justificativa
 
-Em estudo da Reuters, realizado com um grupo de 74 mil pessoas, em 37 países diferentes, fica claro o volume preocupante de informações falsas sendo propagadas  (NEWMAN et al; 2019). O estudo apresenta que no brasil 35% dos entrevistados informam que as informações consumidas são completamente inventadas. 
-
-Adicionalmente, há uma falta de canais de notícias isentos e objetivos que permitam aos usuários, leitores frequentes de jornais, possam ter a mesmo experiência dos jornais tradicionais em ferramentas digitais. 
+Os problemas na cidade de Belo Horizonte são diversos e sempre existiram,
+porém os moradores e frequentadores da cidade sempre foram reféns da ouvidoria
+do órgão, que nem sempre ofereceram uma resposta adequada e em tempo ágil. O
+maior objetivo do DatasBH é oferecer um local no qual as pessoas possam expor os
+problemas e obtenham a garantia de que esta queixa chegará aos responsáveis,
+como também poderão identificar se houveram outras denúncias acerca da melhoria
+solicitada por ela. 
 
 ## Público-Alvo
 
-Embora todas as pessoas possam se beneficiar de soluções isentas para se informarem, o foco deste trabalho está no público que tem o hábito de ler notícias nos contextos das suas áreas de atuação com o intuito de ampliarem sua condição de atuarem profissionalmente.
-
-Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mulheres entre 30 e 45 anos que se encontram em oportunidades de trabalho que exigem constante atualização e que fazem uso frequente de computadores e dispositivos móveis para se atualizarem com tópicos que vão além dos assuntos relacionados às suas atividades profissionais
+Estabeleceu-se como público-alvo deste projeto todas as pessoas que
+frequentam Belo Horizonte e que se depararam com algum problema ou serviços mal
+prestados pelo setor público.
