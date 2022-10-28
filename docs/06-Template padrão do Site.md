@@ -2,29 +2,33 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
 
-<li>Template do Site:</li>
-<p>O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme Figura Tela home-page.</p>
+O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme Figura Tela home-page.
 
-<p>Layouts:</p>
-   <p><li>Tela principal
-   <p><li>Barra de pesquisa
-   <p><li>Botão para preencher reclamação
-   <p><li>Reclamações em destaque
-   <p><li>Repositório de reclamações recentes </p></li>
+<img width="798" alt="Screen Shot 2022-10-07" src="https://user-images.githubusercontent.com/112135152/198711572-d43ecdfe-94e8-4fd8-83e1-c05c252ac570.png">
+<b>Figura 4 - Tela Inicial </b>
 
+<p>O template criado está disponível no site http://github.com/…..  e é composto pelos seguintes layouts:  </p>
+   <ul>
+   <li>Tela principal</li>
+   <li>Barra de pesquisa</li>
+   <li>Botão para preencher reclamação</li>
+   <li>Reclamações em destaque</li>
+   <li>Repositório de reclamações recentes</li>
+   </ul>
 
-A responsividade segue o padrão do Bootstrap 
-<li>Tela Principal:</li>
-Tela que abrange todas as visualizações iniciais do site, como as reclamações mais feitas da semana, barra de busca, botão para realizar reclamações e repositório de reclamações mais recentes. 
+<p>A responsividade segue o padrão do Bootstrap</p>
 
-<li>Barra de pesquisa:</li>
+<h4>Tela Principal:</h4>
+Tela que abrange todas as visualizações iniciais do site, como as reclamações mais feitas da semana, barra de busca, botão para realizar reclamações e repositório de reclamações mais recentes.
+
+<h4>Barra de pesquisa:</h4>
 Ela é uma função projetada para pesquisar regiões e problemas.
 
-<li>Botão para preencher reclamações:</li>
-Local onde o usuário pode selecionar a natureza de sua reclamação, por exemplo colocar se é referente a escola, saúde, entre outros. Podendo também descrever o motivo de sua reclamação.  
+<h4>Botão para preencher reclamações:</h4>
+Local onde o usuário pode selecionar a natureza de sua reclamação, por exemplo colocar se é referente a escola, saúde, entre outros. Podendo também descrever o motivo de sua reclamação.
 
-<li>Reclamações em destaque</li>
+<h4>Reclamações em destaque:</h4>
 Essa função garante que as reclamações com maior frequência e com maior número de interações entre usuários fiquem em amostra.    
 
-<li>Repositório de reclamações recentes</li>
+<h4>Repositório de reclamações recentes:</h4>
 O repositório de reclamações diz respeito a porção da página principal que mostra ao usuário as últimas reclamações feitas e seus comentários.
