@@ -7,7 +7,7 @@ O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de
 <img width="798" alt="Screen Shot 2022-10-07" src="https://user-images.githubusercontent.com/112135152/198711572-d43ecdfe-94e8-4fd8-83e1-c05c252ac570.png">
 <b>Figura 4 - Tela Inicial </b>
 
-<p>O template criado está disponível no site http://github.com/…..  e é composto pelos seguintes layouts:  </p>
+O template criado está disponível no site <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t6-grupo_1/blob/main/docs/04-Projeto%20de%20Interface.md"> Github</a> e é composto pelos seguintes layouts: 
    <ul>
    <li>Tela principal</li>
    <li>Barra de pesquisa</li>
@@ -16,7 +16,7 @@ O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de
    <li>Repositório de reclamações recentes</li>
    </ul>
 
-<p>A responsividade segue o padrão do Bootstrap</p>
+A responsividade segue o padrão do Bootstrap.
 
 <h4>Tela Principal:</h4>
 Tela que abrange todas as visualizações iniciais do site, como as reclamações mais feitas da semana, barra de busca, botão para realizar reclamações e repositório de reclamações mais recentes.
