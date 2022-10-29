@@ -2,7 +2,8 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
-  
+Implementação do sistema descrita por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos com os artefatos criados (código fonte), deverão apresentadas as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+
 
 <h4>Requisitos atendidos</h4>
 <ul>
@@ -39,30 +40,6 @@
 <p>}</p>
  
  
-<h4>Instruções de acesso</h4>
-Abra um navegador de Internet e informe a seguinte URL: https://repl.it/Sf3l@#3ks  
-A tela de notícias é a primeira funcionalidade exibida pelo aplicativo. 
- 
- 
-Pesquisa de Notícias (RF-05) 
-A tela de pesquisa permite ao usuário informar um texto que será pesquisado na base de notícias e retornar todas as notícias relacionadas com o texto informado pelo usuário. 
-
-<h4>Artefatos da funcionalidade </h4>
-<ul>
-<li>index.html </li>
-<li>style.css </li>
-<li>logo.jpg </li>
-</ul>
- 
-Instruções de acesso 
-Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub; 
-Descompacte o arquivo em uma pasta específica; 
-Abra o Visual Studio Code e execute on Live Server; 
-Abra um navegador de Internet e informe a seguinte URL: 
-http://localhost:5500/index.html  
-
-
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 > **Links Úteis**:
 >
