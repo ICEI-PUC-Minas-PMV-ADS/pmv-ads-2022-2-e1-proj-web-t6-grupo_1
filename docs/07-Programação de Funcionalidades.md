@@ -16,6 +16,7 @@
 <li>index.html </li>
 <li>style.css </li>
 <li>logo.jpg </li>
+<li>noticias.js </li>
 </ul>
 
 <h4>Estrutura de Dados</h4>
