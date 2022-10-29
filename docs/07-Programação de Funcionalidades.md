@@ -5,7 +5,7 @@
 Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço (URL) e outras orientações de acesso são apresentadas na sequência. 
 Visualização de reclamações (RF-02, RF-07 e RF-09) 
-A tela principal do sistema apresenta apresenta notícias de destaque nos principais canais, as notícias são armazenadas no LocalStorage com estruturas de dados baseada em JSON. Um exemplo da tela é apresentado na Figura X.  
+  
 
 <h4>Requisitos atendidos</h4>
 <ul>
@@ -16,26 +16,29 @@ A tela principal do sistema apresenta apresenta notícias de destaque nos princi
 
 <h4>Artefatos da funcionalidade </h4>
 <ul>
-<li href=" ">index.html </li>
-<li href=" ">style.css </li>
-<li href=" ">logo.jpg </li>
+<li>index.html </li>
+<li>style.css </li>
+<li>logo.jpg </li>
 </ul>
 
 <h4>Estrutura de Dados</h4>
-{ 
-"mensagens": [ 
-{ 
-"id": 1, 
-"titulo": "Trump estende ordem que proíbe Huawei", 
-"data": "14/05/2020", 
-"fonte": "Universo Online", 
-"autor": "Sam Rutherford", 
-"texto": "Em maio de 2019, o presidente dos Estados 
-                  	Unidos, Donald Trump, emitiu uma ordem executiva 
-                   	que proibiu várias empresas estrangeiras ..." 
-} 
-] 
-} 
+<p>var db = {</p>
+   <p> dados: [</p>
+      <p>  {</p>
+           <p> perfil: 'Geraldo Magela',</p>
+           <p> titulo: 'Saúde - Falta de médicos',</p>
+            <p>descricao: 'Bom dia Exemos Senhores, Venho por este meio humildemente falar do meu caso em relação a este problema. Eu me chamo Geraldo Magela sou logista, resido em Belo Horizon…',</p>
+           <p> imagem:'https://s2.glbimg.com/YXmhCmZ5awKDsXwrHhUZDaB4hWc=/0x0:1024x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/p/Z/juBuIhSPyuRAgPq6astQ/whatsapp-image-2020-08-07-at-10.30.49.jpeg',
+            categoria: 'zona-norte',</p>
+       <p> }, </p>
+       <p> {</p>
+           <p> titulo: 'Escola Estadual Presidente Dutra',</p>
+            <p>descricao: 'Bom dia Exmos Senhores, Venho por este meio humildemente falar do meu caso em relação a esta escola. Eu me chamo Dalva Parreiras sou manicure, resido em Belo Horizonte…',</p>
+            <p>imagem: '[http://www.tce.mg.gov.br/ImagemDestaque/1111623737.jpg](http://www.tce.mg.gov.br/ImagemDestaque/1111623737.jpg)',
+            categoria: 'zona-leste',</p>
+      <p>  }</p>
+   <p> ]</p>
+<p>}</p>
  
  
 <h4>Instruções de acesso</h4>
@@ -50,7 +53,7 @@ A tela de pesquisa permite ao usuário informar um texto que será pesquisado na
 <ul>
 <li>index.html </li>
 <li>style.css </li>
-<li>icone_lupa.jpg </li>
+<li>logo.jpg </li>
 </ul>
  
 Instruções de acesso 
