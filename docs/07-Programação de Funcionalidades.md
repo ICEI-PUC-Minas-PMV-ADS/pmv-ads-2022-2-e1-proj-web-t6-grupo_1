@@ -4,6 +4,9 @@
 
 Implementação do sistema descrita por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos com os artefatos criados (código fonte), deverão apresentadas as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 
+![MicrosoftTeams-image (2)](https://user-images.githubusercontent.com/112135152/198854187-85a8fbfb-8ce8-4d29-848b-40f23c56895c.png)
+
+
 
 <h4>Requisitos atendidos</h4>
 <ul>
