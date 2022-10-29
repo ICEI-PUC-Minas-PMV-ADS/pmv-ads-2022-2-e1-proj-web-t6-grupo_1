@@ -31,7 +31,7 @@
        <p> {</p>
            <p> titulo: 'Escola Estadual Presidente Dutra',</p>
             <p>descricao: 'Bom dia Exmos Senhores, Venho por este meio humildemente falar do meu caso em relação a esta escola. Eu me chamo Dalva Parreiras sou manicure, resido em Belo Horizonte…',</p>
-            <p>imagem: '[http://www.tce.mg.gov.br/ImagemDestaque/1111623737.jpg](http://www.tce.mg.gov.br/ImagemDestaque/1111623737.jpg)',
+            <p>imagem: '(http://www.tce.mg.gov.br/ImagemDestaque/1111623737.jpg)',
             categoria: 'zona-leste',</p>
       <p>  }</p>
    <p> ]</p>
