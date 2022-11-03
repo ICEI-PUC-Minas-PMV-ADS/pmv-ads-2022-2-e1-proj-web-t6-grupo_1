@@ -12,7 +12,6 @@ O projeto DataBH tem como objetivo fornecer aos indivíduos uma ferramenta para 
 
 * Anna Clara Rocha Mota
 * Brendon Guimarães Antunes
-* Lucas de Oliveira Bretz Cardoso
 * Maria Julia Silva Medeiros
 * Rafael Fernando de Brito Oliveira
 
