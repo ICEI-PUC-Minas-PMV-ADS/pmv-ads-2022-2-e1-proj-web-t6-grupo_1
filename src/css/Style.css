@@ -31,7 +31,9 @@ body.secondary {
 
 body.login {
     padding-top: 80px;
-    background-image: url(../img/bg_login.jpg);
+    background-image: url(/Img/bg-2.jpg);
+    background-position: center;
+    background-size: cover;
     height: 100vh
 }
 
@@ -7663,7 +7665,7 @@ img {
 }
 
 #user-login .content-box .logo-header {
-    background: #007bff;
+    background: #7F2C00;
     margin: -45px -30px 40px;
     padding: 15px;
     text-align: center
@@ -7691,7 +7693,7 @@ img {
 }
 
 .user-visitor-cover {
-    background-image: url(../img/pattern-bg.png);
+    background-image: url("https://direcional.com.br/wp-content/uploads/2020/08/morar-em-Belo-Horizonte.jpg");
     background-color: #007bff;
     background-size: auto;
     padding: 0;

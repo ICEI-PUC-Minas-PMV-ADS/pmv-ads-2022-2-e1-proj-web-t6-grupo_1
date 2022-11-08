@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/Style.css" rel="stylesheet">
-  <script src="reclamacoes.js"></script>
+  <script src="Js/reclamacoesdb.js"></script>
 </head>
 <body>
   <!-- INICIO DO NAVMENU COM A BARRA DE PESQUISA -->
@@ -22,7 +22,7 @@
           <li class="nav-item"><a class="nav-link" id="top-search-trigger" href="javascript:void(0);"><i class="fas fa-search"></i></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-user">
-                    <li><a href="" data-toggle="modal" data-target="#loginPopup">Entrar</a></li>
+                    <li><a href="pages/login.html">Entrar</a></li>
                 </ul>
       </div>
     </nav>
@@ -170,10 +170,10 @@
                   <div class="sidebar-left-user">
                                   <div class="card sidebar-left-card mb-5">
                         <h5>Faça parte da maior rede social de consumidores</h5>
-                        <ul><li>Partilhe as suas experiências</li><li>Siga marcas, reclamações e outros consumidores</li><li>Descubra quais as marcas com melhor Índice de Satisfação</li><li>Registe-se, é gratuito!</li></ul>								<a class="btn btn-primary mb-2" href="https://portaldaqueixa.com/register">Registrar</a>
+                        <ul><li>Compartilhe as suas experiências.</li><li>Reclame aqui o seu direito.</li><li>Ajude a cidade a melhorar.</li><li>Registe-se, é gratuito!</li></ul>								<a class="btn btn-primary mb-2" href="pages/registrar.html">Registrar</a>
                       </div>
                               </div>
-                  <div class="adx-module ia-home_sidebar_left_bottom"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3531236981670819" data-ad-slot="5664143654" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>				</div>
+                  <div class="adx-module ia-home_sidebar_left_bottom"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3531236981670819" data-ad-slot="5664143654" data-ad-format="auto" data-full-width-responsive="true"></ins></div>				</div>
               </div>
           </div>
         </div>
@@ -214,55 +214,54 @@
       </div>
     </div>
   </footer>
-
-<script>
-  var prods = '';
-  for (i=0; i < db.dados.length; i++) {
-      prods += `<div class="row">
-            <div class="col-md-12">
-              <div class="activity-feed-post mb-4">
-                <article id="activity-feed-1558809" data-timestamp="1666740840" data-complaint-id="f458108b-5b6e-4262-b8d4-518997ef25c5" class="post complaint">
-    <div class="activity-feed-post-header d-flex">
-      <div>
-    <a href="" title="${ db.dados[i].titulo }" class="activity-feed-post-header-avatar"><img class="rounded-circle" src="${ db.dados[i].imagem }"></a>
-    </div>
-  <div class="activity-feed-post-header-data mr-auto pr-2">
-    <div class="activity-feed-post-header-data-username"><a href="" class="actor" title="${ db.dados[i].titulo }">${ db.dados[i].titulo }</a> recebeu uma reclamação de <a Class="actor" href="" title="Ver perfil de ${ db.dados[i].perfil }">${ db.dados[i].perfil }</a></div>
-    <div class="activity-feed-post-header-data-date">há 4 minutos </div>
-  </div>	</div>
-    <div class="d-flex activity-feed-post-status">
-      <div class="d-block d-sm-inline badge badge-warning badge-pill">Aguarda resposta</div>		<span class="d-block d-sm-inline">${ db.dados[i].zona }</span>
-    </div>
-      <div class="activity-feed-post-body">
-      <div class="row">
-        <div class="col-md-4 d-none d-md-block">
-          <a href="" title="Segurança Social - Apoio extraordinário"><img class="img-fluid img-thumbnail" src="${ db.dados[i].imagem }" alt="${ db.dados[i].titulo }"></a>
-        </div>
-        <div class="col-md-8">
-          <h3><a href="" title="${ db.dados[i].titulo }">${ db.dados[i].titulo }</a></h3>
-          <p>${ db.dados[i].descricao} <a href="" title="${ db.dados[i].titulo }">ler reclamação</a></p>
+  <!-- FIM FOOTER -->
+  
+  <script>
+    var prods = '';
+    for (i=0; i < db.dados.length; i++) {
+        prods += `<div class="row">
+              <div class="col-md-12">
+                <div class="activity-feed-post mb-4">
+                  <article id="activity-feed-1558809" data-timestamp="1666740840" data-complaint-id="f458108b-5b6e-4262-b8d4-518997ef25c5" class="post complaint">
+      <div class="activity-feed-post-header d-flex">
+        <div>
+      <a href="" title="${ db.dados[i].titulo }" class="activity-feed-post-header-avatar"><img class="rounded-circle" src="${ db.dados[i].imagem }"></a>
+      </div>
+    <div class="activity-feed-post-header-data mr-auto pr-2">
+      <div class="activity-feed-post-header-data-username"><a href="" class="actor" title="${ db.dados[i].titulo }">${ db.dados[i].titulo }</a> recebeu uma reclamação de <a Class="actor" href="" title="Ver perfil de ${ db.dados[i].perfil }">${ db.dados[i].perfil }</a></div>
+      <div class="activity-feed-post-header-data-date">há 4 minutos </div>
+    </div>	</div>
+      <div class="d-flex activity-feed-post-status">
+        <div class="d-block d-sm-inline badge badge-warning badge-pill">Aguarda resposta</div>		<span class="d-block d-sm-inline">${ db.dados[i].zona }</span>
+      </div>
+        <div class="activity-feed-post-body">
+        <div class="row">
+          <div class="col-md-4 d-none d-md-block">
+            <a href="" title="Segurança Social - Apoio extraordinário"><img class="img-fluid img-thumbnail" src="${ db.dados[i].imagem }" alt="${ db.dados[i].titulo }"></a>
+          </div>
+          <div class="col-md-8">
+            <h3><a href="" title="${ db.dados[i].titulo }">${ db.dados[i].titulo }</a></h3>
+            <p>${ db.dados[i].descricao} <a href="" title="${ db.dados[i].titulo }">ler reclamação</a></p>
+          </div>
         </div>
       </div>
+      <div class="activity-feed-post-footer d-flex">
+      <div class="mr-auto">
+        <a title="Comentar" class="comment" href=""><i class="far fa-comment"></i> Comentar</a>
+      </div>
+      <div><a title="Comentar" href="">${ db.dados[i].comentario} comentários</a></div>
     </div>
-    <div class="activity-feed-post-footer d-flex">
-    <div class="mr-auto">
-      <a title="Comentar" class="comment" href=""><i class="far fa-comment"></i> Comentar</a>
-    </div>
-    <div><a title="Comentar" href="">${ db.dados[i].comentario} comentários</a></div>
-  </div>
-  <div class="activity-feed-post-comment-list d-none">
-    </div>
-  </article></div></div></div>					<div class="row">
-              <div class="col-md-12">
-                <div class="mb-4">
-                  <div class="adx-module ia-home_feed"></div>							</div>
+    <div class="activity-feed-post-comment-list d-none">
+      </div>
+    </article></div></div></div>					<div class="row">
+                <div class="col-md-12">
+                  <div class="mb-4">
+                    <div class="adx-module ia-home_feed"></div>							</div>
+                </div>
               </div>
-            </div>
-          </div> `;
-  }
-  document.getElementById('lista-reclamacoes').innerHTML = prods;
-
-</script>
-  <!-- FIM FOOTER -->
+            </div> `;
+    }
+    document.getElementById('lista-reclamacoes').innerHTML = prods;
+  </script>
 </body>
 </html>
