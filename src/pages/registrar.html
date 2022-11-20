@@ -22,7 +22,7 @@
                                 
                                 <div class="form-group">
                                     <label for="name">Nome Completo:</label>
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="O seu nome" value="" required="">
+                                    <input id="txt_nome" type="text" class="form-control" name="name" id="name" placeholder="O seu nome" value="" required="">
                                 </div>
                                 <div class="form-group">
                                     <label for="birthday">Data de nascimento</label>
@@ -182,13 +182,13 @@
                                 <div class="form-group">
                                     <label for="email">Endereço de e-mail</label>
                                     <p class="text-danger" id="email-error" style="display:none;"></p>
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="O seu e-mail" value="" autocomplete="username" required="">
+                                    <input id="txt_email" type="email" class="form-control" name="email" id="email" placeholder="O seu e-mail" value="" autocomplete="username" required="">
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Senha</label>
-                                    <input type="password" class="form-control" name="password" placeholder="Senha" autocomplete="new-password" required="" aria-autocomplete="list">
+                                    <input id="txt_senha" type="password" class="form-control" name="password" placeholder="Senha" autocomplete="new-password" required="" aria-autocomplete="list">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Registrar</button>
+                                <button onclick="window.location='wwww.google.com'" id="btn_salvar" type="submit" class="btn btn-primary">Registrar</button>
                                 <hr>
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -206,6 +206,26 @@
         </section>
     </section>
     </div>
+    <script src="/Js/login.js"></script>
+
+    <script>
+        function salvaLogin (event) {
+            event.preventDefault ();
+            // Obtem os dados do formulário
+            let nome   = document.getElementById('txt_nome').value;
+            let email  = document.getElementById('txt_email').value;
+            let senha  = document.getElementById('txt_senha').value;
+
+            // Adiciona o usuário no banco de dados
+            addUser (nome, senha, email);
+            alert ('Registrado com sucesso!');
+            window.location.href = "./login.html";
+        }
+        // Associar salvamento ao botao
+        document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);
+    </script>
+
+
 </body>
 
 </html>

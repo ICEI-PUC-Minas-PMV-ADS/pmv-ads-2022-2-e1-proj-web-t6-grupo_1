@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>Inicie sessão no DataBH</title>
     <link href="../css/Style.css" rel="stylesheet">
+    <script src="/Js/login.js"></script>
+    <script>    
+    if (usuarioCorrente.email) {
+    window.location.href = VERIF_LOG;
+    }
+    window.addEventListener('load', initPage);
+    </script>
 </head>
 
 <body id="page-top" class="login ">
@@ -19,16 +26,16 @@
                                     src="../Img/logo.png" height="50"
                                     alt="DataBH"></a>
                         </div>
-                        <form role="form" method="post">
+                        <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
                             <div class="form-group">
                                 <label for="email">E-mail:</label>
-                                <input type="email" class="form-control" name="email" placeholder="E-mail"
+                                <input id="username" type="email" class="form-control" name="email" placeholder="E-mail"
                                     required="required" autocomplete="username">
                             </div>
                             <div class="form-group">
                                 <label for="password">Senha:</label>
                                 <div class="input-group">
-                                    <input type="password" class="form-control" name="password"
+                                    <input id="password" type="password" class="form-control" name="password"
                                         placeholder="Senha" required="required" autocomplete="current-password">
                                 </div>
 
@@ -41,7 +48,7 @@
                             </div>
                             <div class="row mt-4">
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-rounded btn-primary btn-block">Entrar</button>
+                                    <button type="submit" class="btn btn-rounded btn-primary btn-block" name="submit" value="submit">Entrar</button>
                                 </div>
                             </div>
                             <div class="row mt-3">
@@ -57,6 +64,30 @@
         </div>
     </section>
     </div>
+
+    <script>
+        
+        // Declara uma função para processar o formulário de login
+        function processaFormLogin (event) {                
+                // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+                event.preventDefault ();
+
+                // Obtem os dados de login e senha a partir do formulário de login
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+
+                // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+                resultadoLogin = loginUser (username, password);
+                if (resultadoLogin) {
+                    window.location.href = '../index.html';
+                }
+                else { // Se login falhou, avisa ao usuário
+                    alert ('Usuário ou senha incorretos');
+                }
+        }
+        // Associa a funçao processaFormLogin  formulário adicionado um manipulador do evento submit
+        document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);      
+    </script>    
 </body>
 
 </html>
