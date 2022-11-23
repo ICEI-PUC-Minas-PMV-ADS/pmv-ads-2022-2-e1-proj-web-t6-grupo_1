@@ -4,8 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <title>Inicie sessão no DataBH</title>
+    <link rel="shortcut icon" href="../Img/logo.png" type="image/x-icon">
+    <title>Registre-se no DataBH</title>
+    <script src="/Js/login.js"></script>
     <link href="../css/Style.css" rel="stylesheet">
+    <script>
+        if (usuarioCorrente.email) {
+        window.location.href = VERIF_LOG;
+        }
+        window.addEventListener('load', initPage);
+        </script>
 </head>
 
 <body id="page-top" class="login ">
@@ -206,8 +214,6 @@
         </section>
     </section>
     </div>
-    <script src="/Js/login.js"></script>
-
     <script>
         function salvaLogin (event) {
             event.preventDefault ();

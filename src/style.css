@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+:root {
+    --cor0:  blue ;
+    --cor1:  green ;
+    --cor2:  red;
+    --cor3:  purple;
+    --cor4:  black;
+    
+    --fonte-padrao: Arial, Verdana 
+}
+
+h1 {
+    background-color: var(--cor0);
+
+}

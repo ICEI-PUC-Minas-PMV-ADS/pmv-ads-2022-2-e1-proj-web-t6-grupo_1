@@ -183,6 +183,10 @@ section h3.section-subheading {
     z-index: -1
 }
 
+.img-200-200 {
+    width: 150px;
+}
+
 .cover__overlay {
     background: -webkit-linear-gradient(bottom, rgba(10, 109, 219, 0), rgba(10, 109, 219, .9) 40%, #0a6ddb 80%);
     background: -moz-linear-gradient(bottom, rgba(10, 109, 219, 0), rgba(10, 109, 219, .9) 40%, #0a6ddb 80%);
@@ -294,7 +298,7 @@ section h3.section-subheading {
 }
 
 .content-cover {
-    background-image: url(../img/search_cover.jpg);
+    background-image: url(/Img/bg3.png);
     background-size: cover;
     padding: 35px 0;
     background-position: bottom center;
@@ -4833,7 +4837,7 @@ ul.social-buttons li a.instagram:hover {
 }
 
 .complaints-cover {
-    background-image: url(../img/cover_user.jpg)
+    background-image: url(/Img/bg4.jpg)
 }
 
 #complaints-list {

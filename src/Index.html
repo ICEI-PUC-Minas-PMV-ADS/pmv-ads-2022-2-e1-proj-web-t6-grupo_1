@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Img/logo.png" type="image/x-icon">
   <link href="css/Style.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
   <script src="Js/reclamacoesdb.js"></script>
   <script src="/Js/login.js"></script>
-
-  <script>   
+  <script>
     function initPage() {
       //retorna se o usuario esta logado
       if (usuarioCorrente.email) {
@@ -24,76 +31,73 @@
     <button class="dropdown-item" type="button">Configurações</button>
     <button id="btn_logout" class="dropdown-item" type="button">Sair</button>
   </div>
-</div>`
-    //Fazer logout
-    document.getElementById('btn_logout').addEventListener('click', logoutUser);;
-        } else
+</div>`;
+        //usuario na sidebar
+        document.getElementById('logReg').remove();
+        document.getElementById('logUser').innerHTML = `<h5>Bem-Vindo, ${usuarioCorrente.nome}</h5>
+<img src="https://images.ctfassets.net/rporu91m20dc/7dHtxlgFeEa0UAes80Ss0i/d6ddd7957c71d4bd76fefd62d4e9cdfe/doom-mobile-hero.jpg?q=70" class="rounded mx-auto d-block rounded-circle img-200-200" alt="..."></li>
+<div class="btn-group-vertical ml-auto" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-dark">Button</button>
+  <button type="button" class="btn btn-dark">Button</button>
+  <button type="button" class="btn btn-dark">Button</button>
+  <button type="button" class="btn btn-dark">Button</button>
+  <button type="button" class="btn btn-dark">Button</button>
+  <button type="button" class="btn btn-dark">Button</button>
+</div>`;
+        //Fazer logout
+        document.getElementById('btn_logout').addEventListener('click', logoutUser);
+      } else
         document.getElementById('loginUser').innerHTML = `<li class="nav-item"><a class="nav-link" href="pages/login.html">Entrar</a></li>`;
+        document.getElementById('logReg').innerHTML = `<h5>Faça parte da maior rede social de reclamações</h5>
+                  <ul>
+                    <li>Compartilhe as suas experiências.</li>
+                    <li>Reclame aqui o seu direito.</li>
+                    <li>Ajude a cidade a melhorar.</li>
+                    <li>Registre-se, é gratuito!</li>
+                  </ul> <a class="btn btn-primary mb-2 ml-auto" href="pages/registrar.html">Registrar</a>`;
     }
-
     // Associa ao evento de carga da página a função para verificar se o usuário está logado
     window.addEventListener('load', initPage);
-</script>
-
+  </script>
 </head>
+
 <body>
   <!-- INICIO DO NAVMENU COM A BARRA DE PESQUISA -->
-  <section class="home-header" style="background-image:url(https://s2.static.brasilescola.uol.com.br/be/2021/07/bandeira-de-belo-horizonte-capital-de-minas-gerais.jpg)">
+  <section class="home-header"
+    style="background-image:url(https://s2.static.brasilescola.uol.com.br/be/2021/07/bandeira-de-belo-horizonte-capital-de-minas-gerais.jpg)">
     <header class="header">
-    <nav class="navbar nav-pq navbar-expand-lg d-none d-lg-flex">
-      <a class="navbar-brand" href="#"><img src="Img/logo.png" height="50" title="Portal da Queixa"></a>
-      <a class="btn-white-border order-last" href="">Fazer reclamação</a>
-      <div class="navbar-collapse" id="navbar-main-menu">
-        <ul class="navbar-nav navbar-nav-primary mr-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Reclamações</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Ranking</a></li>
-          <li class="nav-item"><a class="nav-link" id="top-search-trigger" href="javascript:void(0);"><i class="fas fa-search"></i></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-user">
-              <div id="loginUser">
-              </div>
-              <div id="userNameLogin">
-                </div>
-            </ul>
-      </div>
-    </nav>
-    <nav class="navbar nav-pq nav-small navbar-expand-lg d-flex d-lg-none">
-      <div class="d-flex align-items-center">
-        <button class="navbar-toggler order-first" type="button" data-toggle="offcanvas" aria-controls="navbar-main-menu" aria-expanded="false" aria-label="Toggle navigation" style="line-height: inherit;">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="Img/logo.png" height="40" title="DataBh"></a>
-      </div>
-      <div class="d-flex align-items-center navbar-actions">
-        <a id="top-small-search-trigger" href="javascript:void(0);"><i class="fas fa-search"></i></a>
-              <a class="d-inline d-lg-none btn-white-border" href="#">Reclamar</a>
-      </div>
-      <div class="offcanvas-collapse" id="navbar-main-menu">
-        <ul class="nav navbar-nav navbar-user">
-              <li class="navbar-user-header d-flex">
-          <div class="mr-auto">
-            <h5>Faça parte da maior rede social de consumidores</h5>
-            <h6><a href="#">Registe-se gratuitamente</a></h6>
-          </div>
-          <button class="navbar-toggler align-self-start" type="button" data-toggle="offcanvas" aria-controls="navbar-main-menu" aria-expanded="false" aria-label="Toggle navigation" style="line-height: inherit;">
-            <span class="navbar-toggler-icon navbar-close"></span>
+      <nav class="navbar nav-pq navbar-expand-lg d-none d-lg-flex">
+        <a class="navbar-brand" href="Index.html"><img src="Img/logo.png" height="50" title="DataBh"></a>
+        <a class="btn-white-border order-last" href="/pages/reclamar.html">Fazer reclamação</a>
+        <div class="navbar-collapse" id="navbar-main-menu">
+          <ul class="navbar-nav navbar-nav-primary mr-auto">
+            <li class="nav-item"><a class="nav-link active" href="Index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pages/reclamacoes.html">Reclamações</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Ranking</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-user">
+            <div id="loginUser">
+            </div>
+            <div id="userNameLogin">
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar nav-pq nav-small navbar-expand-lg d-flex d-lg-none">
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler order-first" type="button" data-toggle="offcanvas"
+            aria-controls="navbar-main-menu" aria-expanded="false" aria-label="Toggle navigation"
+            style="line-height: inherit;">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
           </button>
-        </li>
-              </ul>
-        <ul class="navbar-nav navbar-nav-primary mr-auto">
-          <li class="navbar-title">Menu principal</li>
-          <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home mr-2"></i>Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-inbox mr-2"></i>Reclamações</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-briefcase mr-2"></i>Ranking</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-newspaper mr-2"></i>Notícias</a></li>
-          <li class="mt-3 px-3"><a href="#" class="btn btn-block btn-primary btn-rounded" data-toggle="modal" data-target="#loginPopup">Entrar</a></li>			</ul>
-      </div>
-    </nav>
-  </header>	<div class="home-header-video-container">
-    <video autoplay="" muted="" loop="" class="home-header-video-container-video">
-			<source src="Img/BeloHorizonte.mp4" type="video/mp4">
-		</video>
+          <a class="navbar-brand" href="Index.html"><img src="Img/logo.png" height="40" title="DataBh"></a>
+        </div>
+      </nav>
+    </header>
+    <div class="home-header-video-container">
+      <video autoplay="" muted="" loop="" class="home-header-video-container-video">
+        <source src="Img/BeloHorizonte.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="home-header-search-container">
       <div class="container">
@@ -104,112 +108,85 @@
             <div class="row m-0 home-header-search-container-searchbar-custom">
               <div class="col-12 col-md-10 p-0">
                 <div class="form-group m-0">
-                  <input class="form-control newsearch-input" type="text" name="q" placeholder="O que procura?" required="">
+                  <input id="search" class="form-control newsearch-input" type="text" name="q"
+                    placeholder="O que procura?" required="">
                   <i class="fas fa-search"></i>
                 </div>
               </div>
-              <div class="d-none d-md-block col-md-2 p-0"><button class="btn btn-primary btn-block" type="submit">Pesquisar</button></div>
+              <div class="d-none d-md-block col-md-2 p-0"><button id="btnFiltrar" class="btn btn-primary btn-block" type="button">Pesquisar</button></div>
             </div>
           </form>
           <div class="mt-3 text-left d-none d-md-block">
-          <a class="top_searched_brands" href="#">Norte</a>
-          <a class="top_searched_brands" href="#">Nordeste</a>
-          <a class="top_searched_brands" href="#">Leste</a>
-          <a class="top_searched_brands" href="#">Noroeste</a>
-          <a class="top_searched_brands" href="#">Oeste</a>		
-          <a class="top_searched_brands" href="#">Centro-Sul</a>
+            <a class="top_searched_brands" href="#">Norte</a>
+            <a class="top_searched_brands" href="#">Nordeste</a>
+            <a class="top_searched_brands" href="#">Leste</a>
+            <a class="top_searched_brands" href="#">Noroeste</a>
+            <a class="top_searched_brands" href="#">Oeste</a>
+            <a class="top_searched_brands" href="#">Centro-Sul</a>
+          </div>
         </div>
-       </div>
       </div>
     </div>
   </section>
   <!-- FIM DO NAVMENU -->
   <!-- INICIO DO CONTEUDO DO SITE COM A BARRA LATERAL -->
   <section>
-        <div class="container">
-          <div class="row">
+    <div class="container">
+      <div class="row">
         <div class="col-md-8 col-xl-9 activity-feed">
           <div class="row">
             <div class="col-md-12">
               <div class="activity-feed-post new mb-4">
                 <div class="activity-feed-post-header d-flex">
-                  <div class="start-your-complaint"><a href="#" role="button" data-target="#complaintPopup"><i class="far fa-edit"></i> Comece a sua reclamação</a></div>
-
+                  <div class="start-your-complaint"><a href="/pages/reclamar.html" role="button"
+                      data-target="#complaintPopup"><i class="far fa-edit"></i> Comece a sua reclamação</a></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div id="lista-reclamacoes">
+          <div id="content">
           </div>
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="activity-feed-post mb-4">
-    </div>
-  </div>
-			<a href="#" class="btn btn-primary btn-block nextSelector">Carregar mais</a>
-    </div>
-  </div>
-
-  <!--Sidebar Right-->
-                <div class="col-lg-3 sidebar-right">
-                <div class="sidebar-left-user">
-        <div class="module module-last-news">
-              <h4>Top Reclamações</h4>
-                    <article>
-                    <a href="#">
-                      <figure>
-                        <img src="https://royalpets.vteximg.com.br/arquivos/ids/177811/gato-de-bengala-320x250.jpg?v=637534012132770000" class="img-fluid img-thumbnail " alt="Jorge">
-                      </figure>
-                      <div class="module-last-news-body">
-                        <h5></h5>
-                        <div class="module-last-news-body-date"><i class="far fa-calendar-alt"></i> <time datetime="2022-10-21T17:14">21 de outubro 2022</time></div>
-                      </div>
-                    </a>
-                    <div class="clearfix"></div>
-                  </article>
-                              <article>
-                    <a href="#">
-                      <figure>
-                        <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/3nrpyxb6niw4c.jpg" class="img-fluid img-thumbnail" alt="Rua emburacada">
-                      </figure>
-                      <div class="module-last-news-body">
-                        <h5> </h5>
-                        <div class="module-last-news-body-date"><i class="far fa-calendar-alt"></i> <time datetime="2022-10-21T14:52">21 de outubro 2022</time></div>
-                      </div>
-                    </a>
-                    <div class="clearfix"></div>
-                  </article>
-                              <article>
-                    <a href="">
-                      <figure>
-                        <img src="https://s2.glbimg.com/PGRh8lULZGdsa7c09wMVFOhyLD8=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/D/T/XUOWxERiGC9hG9LwIB5w/csnossasenhoraaparecida.jpeg" class="img-fluid img-thumbnail" alt="Fila em postos de saúde">
-                      </figure>
-                      <div class="module-last-news-body">
-                        <h5></h5>
-                        <div class="module-last-news-body-date"><i class="far fa-calendar-alt"></i> <time datetime="2022-10-20T16:31">20 de outubro 2022</time></div>
-                      </div>
-                    </a>
-                    <div class="clearfix"></div>
-                  </article>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="activity-feed-post mb-4">
               </div>
             </div>
-
-
-            <div class="col-md-13 col-xl-13">
-                <div class="sidebar-left">
-                  <div class="sidebar-left-user">
-                                  <div class="card sidebar-left-card mb-5">
-                        <h5>Faça parte da maior rede social de consumidores</h5>
-                        <ul><li>Compartilhe as suas experiências.</li><li>Reclame aqui o seu direito.</li><li>Ajude a cidade a melhorar.</li><li>Registe-se, é gratuito!</li></ul>								<a class="btn btn-primary mb-2" href="pages/registrar.html">Registrar</a>
-                      </div>
-                              </div>
-                  <div class="adx-module ia-home_sidebar_left_bottom"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3531236981670819" data-ad-slot="5664143654" data-ad-format="auto" data-full-width-responsive="true"></ins></div>				</div>
-              </div>
+            <a href="#" class="btn btn-primary btn-block nextSelector">Carregar mais</a>
           </div>
         </div>
-      
+
+        <!--Sidebar Right-->
+        <div class="col-lg-3 sidebar-right">
+          <div class="sidebar-left-user">
+            <div class="module module-last-news">
+              <h4>Top Reclamações</h4>
+              <div id="topContent"></div>
+            </div>
+          </div>
+
+          <div class="col-md-13 col-xl-13">
+            <div class="sidebar-left">
+              <div class="sidebar-left-user">
+                <div class="card sidebar-left-card mb-5">
+                  <div id="logUser">
+                    <!---Aparece Usuario-->
+                  </div>
+                  <div id="logReg">
+                    <!---Aparece registrar.-->
+                  </div>
+                </div>
+              </div>
+              <div class="adx-module ia-home_sidebar_left_bottom"><ins class="adsbygoogle" style="display:block"
+                  data-ad-client="ca-pub-3531236981670819" data-ad-slot="5664143654" data-ad-format="auto"
+                  data-full-width-responsive="true"></ins></div>
+            </div>
+          </div>
+        </div>
+      </div>
+         
+
   </section>
   <!-- FIM DO CONTEUDO DO SITE COM A BARRA LATERAL -->
   <!-- INICIO FOOTER  -->
@@ -232,8 +209,8 @@
           <div class="col-lg-3 col-sm-12 mt-4 mt-lg-0">
             <h4>Comunidade</h4>
             <ul class="list-unstyled">
-              <li><a href="#"><span>&gt;</span> Registe-se gratuitamente</a></li>						
-              <li><a href="#"><span>&gt;</span> Fazer reclamação</a></li>
+              <li><a href="/pages/registrar.html"><span>&gt;</span> Registe-se gratuitamente</a></li>
+              <li><a href="/pages/reclamar.html"><span>&gt;</span> Fazer reclamação</a></li>
             </ul>
           </div>
         </div>
@@ -242,38 +219,55 @@
 
     <div class="container">
       <div class="copyright">
-      </svg> Copyright © 2022 Feito com a mão e com o ❤️ by alunos da PucMinas.
+        </svg> Copyright © 2022 Feito com a mão e com o ❤️ by alunos da PucMinas.
       </div>
     </div>
   </footer>
   <!-- FIM FOOTER -->
-  
   <script>
+    //TOP BARRA LATERAL
+    var topContent= '';
+    for (i = 0; i < db.dados.length; i++) {
+      topContent += `<article>
+                    <a href="#">
+                      <figure>
+                        <img src="${db.dados[i].imagem}" class="img-fluid img-thumbnail " alt="Jorge">
+                      </figure>
+                      <div class="module-last-news-body">
+                        <h5>${db.dados[i].titulo}</h5>
+                        <div class="module-last-news-body-date"><i class="far fa-calendar-alt"></i> <time datetime="2022-10-21T17:14">${db.dados[i].data}</time></div>
+                      </div>
+                    </a>
+                    <div class="clearfix"></div>
+                  </article>`;
+    }
+    document.getElementById('topContent').innerHTML = topContent;
+    //CENTRO DE RECLAMAÇOES
     var prods = '';
-    for (i=0; i < db.dados.length; i++) {
-        prods += `<div class="row">
+    for (i = 0; i < db.dados.length; i++) {
+      prods += `<div class="row">
               <div class="col-md-12">
                 <div class="activity-feed-post mb-4">
                   <article id="activity-feed-1558809" data-timestamp="1666740840" data-complaint-id="f458108b-5b6e-4262-b8d4-518997ef25c5" class="post complaint">
       <div class="activity-feed-post-header d-flex">
         <div>
-      <a href="" title="${ db.dados[i].titulo }" class="activity-feed-post-header-avatar"><img class="rounded-circle" src="${ db.dados[i].imagem }"></a>
+      <a href="" title="${db.dados[i].titulo}" class="activity-feed-post-header-avatar"><img class="rounded-circle" src="${db.dados[i].imagem}"></a>
       </div>
     <div class="activity-feed-post-header-data mr-auto pr-2">
-      <div class="activity-feed-post-header-data-username"><a href="" class="actor" title="${ db.dados[i].titulo }">${ db.dados[i].titulo }</a> recebeu uma reclamação de <a Class="actor" href="" title="Ver perfil de ${ db.dados[i].perfil }">${ db.dados[i].perfil }</a></div>
+      <div class="activity-feed-post-header-data-username"><a href="" class="actor" title="${db.dados[i].titulo}">${db.dados[i].titulo}</a> recebeu uma reclamação de <a Class="actor" href="" title="Ver perfil de ${db.dados[i].perfil}">${db.dados[i].perfil}</a></div>
       <div class="activity-feed-post-header-data-date">há 4 minutos </div>
     </div>	</div>
       <div class="d-flex activity-feed-post-status">
-        <div class="d-block d-sm-inline badge badge-warning badge-pill">Aguarda resposta</div>		<span class="d-block d-sm-inline">${ db.dados[i].zona }</span>
+        <div class="d-block d-sm-inline badge badge-warning badge-pill">Aguarda resposta</div>		<span class="d-block d-sm-inline">${db.dados[i].zona}</span>
       </div>
         <div class="activity-feed-post-body">
         <div class="row">
           <div class="col-md-4 d-none d-md-block">
-            <a href="" title="Segurança Social - Apoio extraordinário"><img class="img-fluid img-thumbnail" src="${ db.dados[i].imagem }" alt="${ db.dados[i].titulo }"></a>
+            <a href="" title="Segurança Social - Apoio extraordinário"><img class="img-fluid img-thumbnail" src="${db.dados[i].imagem}" alt="${db.dados[i].titulo}"></a>
           </div>
           <div class="col-md-8">
-            <h3><a href="" title="${ db.dados[i].titulo }">${ db.dados[i].titulo }</a></h3>
-            <p>${ db.dados[i].descricao} <a href="" title="${ db.dados[i].titulo }">ler reclamação</a></p>
+            <h3><a href="" title="${db.dados[i].titulo}">${db.dados[i].titulo}</a></h3>
+            <p>${db.dados[i].descricao} <a href="" title="${db.dados[i].titulo}">ler reclamação</a></p>
           </div>
         </div>
       </div>
@@ -281,7 +275,7 @@
       <div class="mr-auto">
         <a title="Comentar" class="comment" href=""><i class="far fa-comment"></i> Comentar</a>
       </div>
-      <div><a title="Comentar" href="">${ db.dados[i].comentario} comentários</a></div>
+      <div><a title="Comentar" href="">${db.dados[i].comentario} comentários</a></div>
     </div>
     <div class="activity-feed-post-comment-list d-none">
       </div>
@@ -293,7 +287,8 @@
               </div>
             </div> `;
     }
-    document.getElementById('lista-reclamacoes').innerHTML = prods;
+    document.getElementById('content').innerHTML = prods;
   </script>
+  <script src="/Js/barradepesquisa.js"></script>
 </body>
 </html>

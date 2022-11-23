@@ -1,5 +1,5 @@
 // Página inicial de Login
-const LOGIN_URL = "pages/login.html";
+const LOGIN_URL = "../pages/login.html";
 const VERIF_LOG = "../Index.html"
 var db_usuarios = {};
 var usuarioCorrente = {};
@@ -48,7 +48,7 @@ function initLoginApp () {
         // Salva os dados iniciais no local Storage convertendo-os para string antes
         localStorage.setItem('db_usuarios', JSON.stringify (dadosIniciais));
     }
-    else  {  // Se há dados no localStorage
+    else  { 
         
         // Converte a string JSON em objeto colocando no banco de dados baseado em JSON
         db_usuarios = JSON.parse(usuariosJSON);    
@@ -105,7 +105,5 @@ function addUser (nome, senha, email) {
 function setUserPass () {
 
 }
-
-
 // Inicializa as estruturas utilizadas pelo LoginApp
 initLoginApp ();
