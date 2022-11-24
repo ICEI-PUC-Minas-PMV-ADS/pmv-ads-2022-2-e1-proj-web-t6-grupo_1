@@ -33,20 +33,44 @@
 </div>`;
         //usuario na sidebar
         document.getElementById('logReg').remove();
-        document.getElementById('logUser').innerHTML = `<h5>Bem-Vindo, ${usuarioCorrente.nome}</h5>
-<img src="https://images.ctfassets.net/rporu91m20dc/7dHtxlgFeEa0UAes80Ss0i/d6ddd7957c71d4bd76fefd62d4e9cdfe/doom-mobile-hero.jpg?q=70" class="rounded mx-auto d-block rounded-circle img-200-200" alt="..."></li>
+        document.getElementById('logUser').innerHTML = `<div class="card sidebar-left mb-5">
+        <div class="sidebar-left-user">
+													<div class="sidebar-left-user-data full-width mb-4">
+								<div class="sidebar-left-user-profile">
+									<div class="sidebar-left-user-name">
+										<div class="sidebar-left-user-pic">
+											<img src="https://img.myloview.com/posters/default-avatar-profile-in-trendy-style-for-social-media-user-icon-400-228654852.jpg" alt="${usuarioCorrente.nome}" class="rounded-circle img-fluid">
+										</div>
+									</div>
+									<div class="sidebar-left-user-specs">
+										<h3>${usuarioCorrente.nome}</h3>
+										<span>Membro desde  5 de outubro 2022</span>
+									</div>
+								</div>
+								<hr>
+								<div class="sidebar-left-user-status text-center">
+									<h4>Reclamações</h4>
+									<span>0</span>
+								</div>
+								<hr>
+								<div class="p-2">
+									<a href="#" title="Ver perfil" class="btn btn-primary btn-block">Ver perfil</a>
+								</div>
+							</div>
+											</div>
 `;
         //Fazer logout
         document.getElementById('btn_logout').addEventListener('click', logoutUser);
       } else
         document.getElementById('loginUser').innerHTML = `<li class="nav-item"><a class="nav-link" href="pages/login.html">Entrar</a></li>`;
-        document.getElementById('logReg').innerHTML = `<h5>Faça parte da maior rede social de reclamações</h5>
+        document.getElementById('logReg').innerHTML = `<div class="card sidebar-left-card mb-5">
+        <h5>Faça parte da maior rede social de reclamações</h5>
                   <ul>
                     <li>Compartilhe as suas experiências.</li>
                     <li>Reclame aqui o seu direito.</li>
                     <li>Ajude a cidade a melhorar.</li>
                     <li>Registre-se, é gratuito!</li>
-                  </ul> <a class="btn btn-primary mb-2 ml-auto" href="pages/registrar.html">Registrar</a>`;
+                  </ul> <a class="btn btn-primary mb-2" href="pages/registrar.html">Registrar</a>`;
     }
     // Associa ao evento de carga da página a função para verificar se o usuário está logado
     window.addEventListener('load', initPage);
@@ -160,7 +184,7 @@
           <div class="col-md-13 col-xl-13">
             <div class="sidebar-left">
               <div class="sidebar-left-user">
-                <div class="card sidebar-left-card mb-5">
+                
                   <div id="logUser">
                     <!---Aparece Usuario-->
                   </div>

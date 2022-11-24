@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/Img/logo.png" type="image/x-icon">
+  <link href="/css/Style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="/Js/reclamacoesdb.js"></script>
+  <script src="/Js/login.js"></script>
+  <style>
+    #complaints-list {
+      margin-top: 30px;
+    }
+
+    .module-last-news {
+      margin-top: 30px;
+    }
+
+    .shadow {
+      width: 100%;
+      height: 80%;
+      margin-top: 30px;
+    }
+  </style>
+  <script>
+    function initPage() {
+      //retorna se o usuario esta logado
+      if (usuarioCorrente.email) {
+        //Remove o campo Entrar
+        document.getElementById('loginUser').remove();
+        document.getElementById('userNameLogin').innerHTML = `<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${usuarioCorrente.nome}</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Conta</button>
+    <button class="dropdown-item" type="button">Configurações</button>
+    <button id="btn_logout" class="dropdown-item" type="button">Sair</button>
+  </div>
+</div>`
+        //Fazer logout
+        document.getElementById('btn_logout').addEventListener('click', logoutUser);;
+      } else
+        document.getElementById('loginUser').innerHTML = `<li class="nav-item"><a class="nav-link" href="/pages/login.html">Entrar</a></li>`;
+    }
+
+    // Associa ao evento de carga da página a função para verificar se o usuário está logado
+    window.addEventListener('load', initPage);
+  </script>
+
+</head>
+
+<body>
+  <!-- INICIO DO NAVMENU COM A BARRA DE PESQUISA -->
+  <header class="header">
+    <nav class="navbar nav-pq navbar-expand-lg d-none d-lg-flex">
+      <a class="navbar-brand" href="Index.html"><img src="/Img/logo.png" height="50" title="DataBh"></a>
+      <a class="btn-white-border order-last" href="/pages/reclamar.html">Fazer reclamação</a>
+      <div class="navbar-collapse" id="navbar-main-menu">
+        <ul class="navbar-nav navbar-nav-primary mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/Index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/pages/reclamacoes.html">Reclamações</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ranking</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-user">
+          <div id="loginUser">
+          </div>
+          <div id="userNameLogin">
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- FIM DO NAVMENU -->
+  <!-- INICIO DO CONTEUDO DO SITE COM A BARRA LATERAL -->
+    <section>
+      <section class="content-cover complaints-cover">
+        <div class="overlay"></div>
+        <div class="container">
+          <h1>Reclamações</h1>
+          <p class="m-0">Lista de todas as reclamações.</p>
+        </div>
+      </section>
+
+
+    <div class="container" >
+          <div class="row">
+          <section id="complaints-list">
+            <div id="rec">
+              <!-- Reclamaçoes aparece aqui!-->
+            </div>
+            <a href="#" class="btn btn-primary btn-block nextSelector">Carregar mais</a>
+      </div>
+    </div>
+  </section>
+  <div class="row">
+    <div class="col-md-9">
+      <div class="activity-feed-post mb-3">
+      </div>
+    </div>
+    <!-- INICIO FOOTER  -->
+    <footer class="shadow">
+      <div class="footer-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <img src="/Img/logo.png" alt="logo" width="200">
+            </div>
+            <div class="col-lg-3 col-sm-12 mt-4 mt-lg-0">
+              <h4>Consumers Trust</h4>
+              <ul class="list-unstyled">
+                <li><a href=""><span>&gt;</span> Sobre nós</a></li>
+                <li><a href=""><span>&gt;</span> Perguntas frequentes</a></li>
+                <li><a href=""><span>&gt;</span> Índice de Satisfação</a></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12 mt-4 mt-lg-0">
+              <h4>Comunidade</h4>
+              <ul class="list-unstyled">
+                <li><a href="/pages/registrar.html"><span>&gt;</span> Registre-se gratuitamente</a></li>
+                <li><a href="/pages/reclamar.html"><span>&gt;</span> Fazer reclamação</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          </svg> Copyright © 2022 Feito com a mão e com o ❤️ by alunos da PucMinas.
+        </div>
+      </div>
+    </footer>
+    <!-- FIM FOOTER -->
+    <script>
+      var rec = '';
+      for (i = 0; i < db.dados.length; i++) {
+        rec += `<a class="complaint-list-item-anchor" href="#" title="${db.dados[i].titulo}">
+	<div class="complaint-list-item py-4 p-md-2" data-cid="839114">
+		<div class="row">
+			<div class="col-12 col-xl-3 d-none d-xl-block">
+				<div class="img">
+					<img src="${db.dados[i].imagem}" class="img-fluid" alt="${db.dados[i].titulo}" loading="lazy">
+				</div>
+			</div>
+			<div class="col-12 col-md-9 col-xl-7 complaint-list-item-content mb-3 mb-md-0">
+				<div class="complaint-list-item-content-holder">
+					<h3 class="complaint-list-item-title">${db.dados[i].titulo}</h3>
+					<div class="complaint-list-item-date">
+						<span class="complaint-list-item-date-category">${db.dados[i].categoria} - ${db.dados[i].zona}</span>
+					</div>
+					<div class="complaint-list-item-description">
+						<p>${db.dados[i].descricao}</p>
+					</div>
+				</div>
+				<div class="complaint-list-item-footer pb-2 pb-md-0">
+					<span class="mr-3"><i class="far fa-calendar-alt"></i>${db.dados[i].data}</span>
+				</div>
+			</div>
+			<div class="col-12 col-md-3 col-xl-2 text-md-right">
+				<div class="complaint-list-item-details">
+					<h5 class="float-left float-md-none"><i class="far fa-file-alt"></i> ${db.dados[i].id}</h5>
+					<div class="complaints-list-status-holder float-right float-md-none"><span class="badge badge-pill badge-warning">Aguarda resposta</span></div>				</div>
+			</div>
+		</div>
+	</div>
+</a>`;
+      }
+      document.getElementById('rec').innerHTML = rec;
+    </script>
+
+</body>
+
+</html>
