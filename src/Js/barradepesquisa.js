@@ -1,7 +1,7 @@
 let btnFiltrar = document.getElementById("btnFiltrar");
 /*renderizar com banco completo*/
 renderizarConteudo(db);
-/**
+/*
  * Retonar vetor com os elementos filtrados
  * 
 */
