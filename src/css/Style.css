@@ -7848,7 +7848,7 @@ img {
 
 #user-profile .list-group-item.list-group-item-action.active::before {
     content: "";
-    background: #007bff;
+    background: #7f2c00;
     width: 5px;
     height: 100%;
     position: absolute;
