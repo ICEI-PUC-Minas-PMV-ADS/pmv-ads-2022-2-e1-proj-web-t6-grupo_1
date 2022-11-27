@@ -25,10 +25,10 @@ function renderizarConteudo(dbFiltrado) {
                   <article id="activity-feed-1558809" data-timestamp="1666740840" data-complaint-id="f458108b-5b6e-4262-b8d4-518997ef25c5" class="post complaint">
       <div class="activity-feed-post-header d-flex">
         <div>
-      <a href="" title="${ dbFiltrado.dados[i].titulo }" class="activity-feed-post-header-avatar"><img class="rounded-circle" src="${ dbFiltrado.dados[i].imagem }"></a>
+      <a href="${ dbFiltrado.dados[i].linkreclam }" title="${ dbFiltrado.dados[i].titulo }" class="activity-feed-post-header-avatar"><img class="rounded-circle" src="${ dbFiltrado.dados[i].imagem }"></a>
       </div>
     <div class="activity-feed-post-header-data mr-auto pr-2">
-      <div class="activity-feed-post-header-data-username"><a href="" class="actor" title="${ dbFiltrado.dados[i].titulo }">${ dbFiltrado.dados[i].titulo }</a> recebeu uma reclamação de <a Class="actor" href="" title="Ver perfil de ${ db.dados[i].perfil }">${ db.dados[i].perfil }</a></div>
+      <div class="activity-feed-post-header-data-username"><a href="${ dbFiltrado.dados[i].linkreclam }" class="actor" title="${ dbFiltrado.dados[i].titulo }">${ dbFiltrado.dados[i].titulo }</a> recebeu uma reclamação de <a Class="actor" href="${db.dados[i].linkuser}" title="Ver perfil de ${ db.dados[i].perfil }">${ db.dados[i].perfil }</a></div>
       <div class="activity-feed-post-header-data-date">há 4 minutos </div>
     </div>	</div>
       <div class="d-flex activity-feed-post-status">
@@ -37,19 +37,19 @@ function renderizarConteudo(dbFiltrado) {
         <div class="activity-feed-post-body">
         <div class="row">
           <div class="col-md-4 d-none d-md-block">
-            <a href="" title="Segurança Social - Apoio extraordinário"><img class="img-fluid img-thumbnail" src="${ dbFiltrado.dados[i].imagem }" alt="${ dbFiltrado.dados[i].titulo }"></a>
+            <a href="${ dbFiltrado.dados[i].linkreclam }" title=""><img class="img-fluid img-thumbnail" src="${ dbFiltrado.dados[i].imagem }" alt="${ dbFiltrado.dados[i].titulo }"></a>
           </div>
           <div class="col-md-8">
-            <h3><a href="" title="${ dbFiltrado.dados[i].titulo }">${ dbFiltrado.dados[i].titulo }</a></h3>
-            <p>${ dbFiltrado.dados[i].descricao} <a href="" title="${ dbFiltrado.dados[i].titulo }">ler reclamação</a></p>
+            <h3><a href="${ dbFiltrado.dados[i].linkreclam }" title="${ dbFiltrado.dados[i].titulo }">${ dbFiltrado.dados[i].titulo }</a></h3>
+            <p>${ dbFiltrado.dados[i].descricao.substring(0,180)} <a href="${ dbFiltrado.dados[i].linkreclam }" title="${ dbFiltrado.dados[i].titulo }">...ler reclamação</a></p>
           </div>
         </div>
       </div>
       <div class="activity-feed-post-footer d-flex">
       <div class="mr-auto">
-        <a title="Comentar" class="comment" href=""><i class="far fa-comment"></i> Comentar</a>
+        <a title="Comentar" class="comment" href="${dbFiltrado.dados[i].linkreclam}#comments"><i class="far fa-comment"></i> Comentar</a>
       </div>
-      <div><a title="Comentar" href="">${ dbFiltrado.dados[i].comentario} comentários</a></div>
+      <div><a title="Comentar" href="${dbFiltrado.dados[i].linkreclam}#comments">${ dbFiltrado.dados[i].comentario} comentários</a></div>
     </div>
     <div class="activity-feed-post-comment-list d-none">
       </div>

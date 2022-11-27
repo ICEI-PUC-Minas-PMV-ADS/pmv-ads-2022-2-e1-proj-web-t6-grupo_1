@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/Img/logo.png" type="image/x-icon">
+  <link href="/css/Style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="/Js/reclamacoesdb.js"></script>
+  <script src="/Js/login.js"></script>
+  <style>
+    #complaints-list {
+      margin-top: 30px;
+    }
+
+    .module-last-news {
+      margin-top: 30px;
+    }
+
+    .shadow {
+      width: 100%;
+      height: 80%;
+      margin-top: 30px;
+    }
+  </style>
+  <script>
+    function initPage() {
+      //retorna se o usuario esta logado
+      if (usuarioCorrente.email) {
+        //Remove o campo Entrar
+        document.getElementById('loginUser').remove();
+        document.getElementById('userNameLogin').innerHTML = `<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${usuarioCorrente.nome}</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Conta</button>
+    <button class="dropdown-item" type="button">Configurações</button>
+    <button id="btn_logout" class="dropdown-item" type="button">Sair</button>
+  </div>
+</div>`
+        //Fazer logout
+        document.getElementById('btn_logout').addEventListener('click', logoutUser);;
+      } else
+        document.getElementById('loginUser').innerHTML = `<li class="nav-item"><a class="nav-link" href="/pages/login.html">Entrar</a></li>`;
+    }
+
+    // Associa ao evento de carga da página a função para verificar se o usuário está logado
+    window.addEventListener('load', initPage);
+  </script>
+</head>
+
+<body>
+  <!-- INICIO DO NAVMENU COM A BARRA DE PESQUISA -->
+  <header class="header">
+    <nav class="navbar nav-pq navbar-expand-lg d-none d-lg-flex">
+      <a class="navbar-brand" href="Index.html"><img src="/Img/logo.png" height="50" title="DataBh"></a>
+      <a class="btn-white-border order-last" href="/pages/reclamar.html">Fazer reclamação</a>
+      <div class="navbar-collapse" id="navbar-main-menu">
+        <ul class="navbar-nav navbar-nav-primary mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/Index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/reclamacoes.html">Reclamações</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ranking</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-user">
+          <div id="loginUser">
+          </div>
+          <div id="userNameLogin">
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- FIM DO NAVMENU -->
+  <!-- INICIO DO CONTEUDO DO SITE COM A BARRA LATERAL -->
+    <section style="margin-top: 60px;">
+				<div class="col-xl-9 ml-auto mr-auto">
+					<div class="content-box p-0">
+						<div class="complaint-detail-body p-0">
+							<div class="px-4 px-md-5 pt-md-5 pt-4 pb-4 pb-md-5">
+								<div class="row complaint-detail-body-subheader">
+									<div class="col-12 col-md-10 mb-2 order-last order-md-first">
+										<h4 id="logTitle">-</h4>
+										<div class="complaint-detail-body-subheader-info">
+											<div class="d-sm-flex flex-wrap">
+												<div class="badge badge-primary badge-pill">Em tratamento</div>&emsp;												
+                                                <div id="logId" class="complaint-detail-body-subheader-info-item mr-3 pr-3 text-muted mt-2 mt-sm-0">								
+                                                </div>
+													<div id="logComents" class="complaint-detail-body-subheader-info-item mt-sm-2 mt-lg-0">
+														
+													</div>
+																							</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-box p-0" style="margin-top: -30px;">
+						<div class="complaint-detail-body p-0">
+							<div class="py-4 px-4 px-md-5">
+																<div class="d-flex complaint-detail-body-header">
+									<div>
+										<a href="" title="paulo monteiro">
+                      <img style="width: 100px;" title="Ver perfil" src="https://img.myloview.com/posters/default-avatar-profile-in-trendy-style-for-social-media-user-icon-400-228654852.jpg" class="rounded-circle avatar"></a>								
+                    	</div>
+									<div class="complaint-detail-body-header-data mr-auto pr-2 ml-3 mt-4">
+										<h5 id="logUser"></a></h5><h6>apresentou a seguinte reclamação</h6>
+										<i class="far fa-calendar-alt"></i>&emsp;<time id="logData"> 00/00/0000</time>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-sm-12 col-md-12">
+										<div id="logDescricao" class="complaint-detail-body-description"></div>
+										<hr><div id="logImg"></div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					<div class="module-brandad mt-4"></div>										<div id="comments" class="comments-list content-box">
+						<h4>Comentários <span class="text-muted">(2)</span></h4>
+            <!--Comentarios-->
+            <div id="c-22229" class="comments-list__item py-2">
+							<a href="" title="Ver perfil de">								
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzOkxkw4_Jroi5sHXGeyoLXKvEQdHcwNd6kuIGA-fkwbdUfh76NOlI9V_9Bi5Y0RrnMkQ&usqp=CAU" class="rounded-circle img-fluid" alt="Ver perfil"></a>							
+                	<div class="comments-list__item-content">
+									<div class="dropdown float-right">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fas fa-ellipsis-h"></i></a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#" class="dropdown-item" data-toggle="modal" data-target="#reportModal" data-cid="cid-22229"><i class="fas fa-ban"></i> Reportar comentário</a>
+										</div>
+									</div>
+									<p class="comments-list__content-header"><a href="" title="Ver perfil"><span class="comments-list__header-name">Jose Pina</span></a>  <span class="comments-list__header-date">• <time class="timeago">há 2 meses</time></span></p>
+									<p class="comments-list__content-body">Que absurdo!!! Como pode a copasa deixar algo assim para tras.. Realmente é uma falta de respeito com os moradores da rua!</p>
+								</div>
+							</div>
+
+              <div id="c-22229" class="comments-list__item py-2">
+                <a href="" title="Ver perfil">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzOkxkw4_Jroi5sHXGeyoLXKvEQdHcwNd6kuIGA-fkwbdUfh76NOlI9V_9Bi5Y0RrnMkQ&usqp=CAU" class="rounded-circle img-fluid" alt="Ver perfil"></a>
+                  	<div class="comments-list__item-content">
+                    <div class="dropdown float-right">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fas fa-ellipsis-h"></i></a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#reportModal" data-cid="cid-22229"><i class="fas fa-ban"></i> Reportar comentário</a>
+                      </div>
+                    </div>
+                    <p class="comments-list__content-header">
+                      <a href="" title="Ver perfil"><span class="comments-list__header-name">Guilherme Fonseca</span></a>  
+                      <span class="comments-list__header-date">• <time class="timeago">há 3 meses</time></span></p>
+                    <p class="comments-list__content-body">Sinceramente! Acho uma falta de respeito a copasa deixar um buraco enorme desses na rua depois de ter feito um serviço.</p>
+                  </div>
+                </div>
+																			<div class="comments-list__login text-center mt-3">
+								<p>Deixe o seu comentário!</p>
+								<a class="btn btn-rounded btn-primary btn-lg" href="" data-toggle="modal">Entrar</a>
+							</div>
+											</div>
+														</div>
+			</div>
+		</div>
+  </section>
+  <div class="row">
+    <div class="col-md-9">
+      <div class="activity-feed-post mb-3">
+      </div>
+    </div>
+    <!-- INICIO FOOTER  -->
+    <footer class="shadow">
+      <div class="footer-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <img src="/Img/logo.png" alt="logo" width="200">
+            </div>
+            <div class="col-lg-3 col-sm-12 mt-4 mt-lg-0">
+              <h4>Informações</h4>
+              <ul class="list-unstyled">
+                <li><a href=""><span>&gt;</span> Sobre nós</a></li>
+                <li><a href=""><span>&gt;</span> Perguntas frequentes</a></li>
+                <li><a href=""><span>&gt;</span> Índice de Satisfação</a></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12 mt-4 mt-lg-0">
+              <h4>Comunidade</h4>
+              <ul class="list-unstyled">
+                <li><a href="/pages/registrar.html"><span>&gt;</span> Registre-se gratuitamente</a></li>
+                <li><a href="/pages/reclamar.html"><span>&gt;</span> Fazer reclamação</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          </svg> Copyright © 2022 Feito com a mão e com o ❤️ by alunos da PucMinas.
+        </div>
+      </div>
+    </footer>
+    <!-- FIM FOOTER -->
+    <script>
+        document.getElementById('logTitle').innerHTML = db.dados[0].titulo;
+        document.getElementById('logUser').innerHTML = `<a href="${db.dados[0].linkuser}" title="Ver perfil">${db.dados[0].perfil}</a>`;
+        document.getElementById('logData').innerHTML = db.dados[0].data;
+        document.getElementById('logDescricao').innerHTML = db.dados[0].descricao;
+        document.getElementById('logId').innerHTML = `<i class="far fa-edit"></i>` + db.dados[0].id;
+        document.getElementById('logComents').innerHTML = `<a href="#comments" class="comment text-muted pl-0"><i class="far fa-comment"></i> ${db.dados[0].comentario} comentários</a>`
+        document.getElementById('logImg').innerHTML = `<img style="width: 500px;" src="${db.dados[0].imagem}" title="" loading="lazy">`
+    </script>
+</body>
+</html>

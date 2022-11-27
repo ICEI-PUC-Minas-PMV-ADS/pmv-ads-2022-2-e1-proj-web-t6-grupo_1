@@ -3,13 +3,17 @@ var db = {
         {
             "id": 8487489,
             "perfil": "Geraldo Magela",
-            "titulo": "Buraco não tampado no bairro nazare",
-            "descricao": "Há mais de um mês venho solicitando à Copasa o tamponamento de um buraco que foi efetuado pelos prestadores de serviço desta empresa. Sempre verifico o app e consta a informação de atendido sem execução, porém nao entram em contato para informar o porque de tal situação. O buraco está causando mal cheiro no local, uma vez que gatos e cachorros estão utilizando para fazer necessidades fisiologicas. Ontem se findou mais um prazo para execução do serviço…",
+            "titulo": "Buraco não tampado no bairro Cruzeiro",
+            "descricao": "Há mais de um mês venho solicitando à Copasa o tamponamento de um buraco que foi efetuado pelos prestadores de serviço desta empresa. O buraco está causando mal cheiro no local, uma vez que gatos e cachorros estão utilizando para fazer necessidades fisiologicas. Ontem se findou mais um prazo para execução do serviço, segundo o atendimento telefonico de Ariele (atendente da Copasa), entretanto o buraco está aberto ainda. A informação que sempre tenho é que é necessário uma empreiteira finalizar o serviço, mais essa situação já passou de um mês. Verifico que por se tratar de uma região de aglomerado há essa dificuldade no atendimento.Porém se tal situação ocorresse em bairro nobre com certeza não seria necessário utilizar este meio de reclamação, neh?!Solicito retorno.",
             "imagem": "https://patoshoje.com.br/media/imageprov/buracos-copasa-ruas-c1.jpg",
-            "zona": "Norte",
+            "zona": "Sul",
             "comentario": 2,
-            "data": "08/9/2022",
-            "categoria": "Urbano"
+            "data": "08/09/2022",
+            "categoria": "Urbano",
+            "linkuser": "../pages/user/geraldo_magela.html",
+            "linkreclam": "../pages/reclamacao/buraconaotampado.html",
+            "situacao": "Em tratamento"
+
         }, {
             "id": 8487490,
             "perfil": "Dalva Parreiras",
@@ -19,7 +23,10 @@ var db = {
             "zona": "Leste",
             "comentario": 7,
             "data": "21/11/2022",
-            "categoria": "Educação"
+            "categoria": "Educação",
+            "linkuser": "",
+            "linkreclam": "",
+            "situacao": "Resolvido"
         }, {
             "id": 8487491,
             "perfil": "Thamyris Nunes",
@@ -28,8 +35,11 @@ var db = {
             "imagem": "https://vendadeplanodesaude.com.br/wp-content/uploads/2019/03/hospital-family.gif-1.png",
             "zona": "Oeste",
             "comentario": 2,
-            "data": "25/7/2022",
-            "categoria": "Saúde"
+            "data": "25/07/2022",
+            "categoria": "Saúde",
+            "linkuser": "",
+            "linkreclam": "",
+            "situacao": "Resolvido"
         }, {
             "id": 8487492,
             "perfil": "Jair Antunes",
@@ -39,7 +49,10 @@ var db = {
             "zona": "Leste",
             "comentario": 4,
             "data": "02/07/2022",
-            "categoria": "Urbano"
+            "categoria": "Urbano",
+            "linkuser": "",
+            "linkreclam": "",
+            "situacao": "Em tratamento"
         }, {
             "id": 8487493,
             "perfil": "Thiago Henrique",
@@ -49,7 +62,10 @@ var db = {
             "zona": "Sul",
             "comentario": 1,
             "data": "01/06/2022",
-            "categoria": "Urbano"
+            "categoria": "Urbano",
+            "linkuser": "",
+            "linkreclam": "",
+            "situacao": "Resolvido"
         }
     ]
 }

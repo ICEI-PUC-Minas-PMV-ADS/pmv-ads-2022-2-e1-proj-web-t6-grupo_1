@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="Img/logo.png" type="image/x-icon">
   <link href="css/Style.css" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -125,7 +126,6 @@
                 <div class="form-group m-0">
                   <input id="search" class="form-control newsearch-input" type="text" name="q"
                     placeholder="O que procura?" required="">
-                  <i class="fas fa-search"></i>
                 </div>
               </div>
               <div class="d-none d-md-block col-md-2 p-0"><button id="btnFiltrar" class="btn btn-primary btn-block" type="button">Pesquisar</button></div>
@@ -213,7 +213,7 @@
             <img src="Img/logo.png" alt="" width="200">
           </div>
           <div class="col-lg-3 col-sm-12 mt-4 mt-lg-0">
-            <h4>Consumers Trust</h4>
+            <h4>Informações</h4>
             <ul class="list-unstyled">
               <li><a href=""><span>&gt;</span> Sobre nós</a></li>
               <li><a href=""><span>&gt;</span> Perguntas frequentes</a></li>
@@ -244,7 +244,7 @@
     var topContent= '';
     for (i = 0; i < db.dados.length; i++) {
       topContent += `<article>
-                    <a href="#">
+                    <a href="${db.dados[i].linkreclam}">
                       <figure>
                         <img src="${db.dados[i].imagem}" class="img-fluid img-thumbnail " alt="Jorge">
                       </figure>
@@ -266,10 +266,10 @@
                   <article id="activity-feed-1558809" data-timestamp="1666740840" data-complaint-id="f458108b-5b6e-4262-b8d4-518997ef25c5" class="post complaint">
       <div class="activity-feed-post-header d-flex">
         <div>
-      <a href="" title="${db.dados[i].titulo}" class="activity-feed-post-header-avatar"><img class="rounded-circle" src="${db.dados[i].imagem}"></a>
+      <a href="${db.dados[i].linkreclam}" title="${db.dados[i].titulo}" class="activity-feed-post-header-avatar"><img class="rounded-circle" src="${db.dados[i].imagem}"></a>
       </div>
     <div class="activity-feed-post-header-data mr-auto pr-2">
-      <div class="activity-feed-post-header-data-username"><a href="" class="actor" title="${db.dados[i].titulo}">${db.dados[i].titulo}</a> recebeu uma reclamação de <a Class="actor" href="" title="Ver perfil de ${db.dados[i].perfil}">${db.dados[i].perfil}</a></div>
+      <div class="activity-feed-post-header-data-username"><a href="" class="actor" title="${db.dados[i].titulo}">${db.dados[i].titulo}</a> recebeu uma reclamação de <a href="${db.dados[i].link}" Class="actor">${db.dados[i].perfil}</a></div>
       <div class="activity-feed-post-header-data-date">há 4 minutos </div>
     </div>	</div>
       <div class="d-flex activity-feed-post-status">
@@ -278,19 +278,19 @@
         <div class="activity-feed-post-body">
         <div class="row">
           <div class="col-md-4 d-none d-md-block">
-            <a href="" title="Segurança Social - Apoio extraordinário"><img class="img-fluid img-thumbnail" src="${db.dados[i].imagem}" alt="${db.dados[i].titulo}"></a>
+            <a href="${db.dados[i].linkreclam}" title=""><img class="img-fluid img-thumbnail" src="${db.dados[i].imagem}" alt="${db.dados[i].titulo}"></a>
           </div>
           <div class="col-md-8">
-            <h3><a href="" title="${db.dados[i].titulo}">${db.dados[i].titulo}</a></h3>
-            <p>${db.dados[i].descricao} <a href="" title="${db.dados[i].titulo}">ler reclamação</a></p>
+            <h3><a href="${db.dados[i].linkreclam}" title="${db.dados[i].titulo}">${db.dados[i].titulo}</a></h3>
+            <p>${db.dados[i].descricao.substring(0,150)} <a href="${db.dados[i].linkreclam}" title="${db.dados[i].titulo}">ler reclamação</a></p>
           </div>
         </div>
       </div>
       <div class="activity-feed-post-footer d-flex">
       <div class="mr-auto">
-        <a title="Comentar" class="comment" href=""><i class="far fa-comment"></i> Comentar</a>
+        <a title="Comentar" class="comment" href="${db.dados[i].linkreclam}#comments"><i class="far fa-comment"></i> Comentar</a>
       </div>
-      <div><a title="Comentar" href="">${db.dados[i].comentario} comentários</a></div>
+      <div><a title="Comentar" href="${db.dados[i].linkreclam}#comments">${db.dados[i].comentario} comentários</a></div>
     </div>
     <div class="activity-feed-post-comment-list d-none">
       </div>

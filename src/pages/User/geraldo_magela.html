@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/Img/logo.png" type="image/x-icon">
     <link href="/css/Style.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -68,7 +69,7 @@
             <div class="navbar-collapse" id="navbar-main-menu">
                 <ul class="navbar-nav navbar-nav-primary mr-auto">
                     <li class="nav-item"><a class="nav-link" href="/Index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/pages/reclamacoes.html">Reclamações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/reclamacoes.html">Reclamações</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Ranking</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-user">
@@ -98,7 +99,7 @@
                         </div>
                         <div class="col-lg-9 d-inline-flex align-items-end mt-5 mt-lg-0">
                             <div class="user-header-footer-item pr-4 mr-4">
-                                <h1 class="user-header-footer-item-main mb-1">
+                                <h1 id="nomeUser" class="user-header-footer-item-main mb-1">
                                     Nome </h1>
                                 <div class="user-header-footer-item-sub">Membro desde 26 de setembro 2022</div>
                             </div>
@@ -147,36 +148,32 @@
                                 <div class="row">
                                     <div class="col-3 d-none d-xl-block">
                                         <div class="img">
-                                            <a
-                                                href="#">
-                                                <img src="https://img.myloview.com/posters/default-avatar-profile-in-trendy-style-for-social-media-user-icon-400-228654852.jpg"
-                                                    class="img-fluid">
+                                            <a id="imagePost" href="#">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-9 col-xl-7 complaint-list-item-content pb-2 pb-md-0">
-                                        <div class="complaint-list-item-content-holder">
-                                            <h3 class="complaint-list-item-title"><a
-                                                    href="#">Cabeçalho da Reclamação</a></h3>
-                                            <div class="complaint-list-item-date">
-                                                <span class="complaint-list-item-date-category">Zona</span>
-                                            </div>
-                                            <div class="complaint-list-item-description">
-                                                <p>Descrição da reclamação</p>
-                                            </div>
+                                        <div id="corpoReclamacao" class="complaint-list-item-content-holder">
+                                            <h3 id="cabecalho" class="complaint-list-item-title"><a
+                                                href="#">Cabeçalho da Reclamação</a></h3>
+                                        <div class="complaint-list-item-date">
+                                            <span id="zonaPost" class="complaint-list-item-date-category">Região</span>
                                         </div>
-                                        <div class="complaint-list-item-footer">
-                                            <span class="mr-3"><i class="far fa-calendar-alt"></i> 26 de setembro
-                                                2020</span><span class="mr-3"><i class="far fa-eye"></i>
-                                                246</span><span><i class="far fa-comment"></i> 0</span>
+                                        <div id="descricao" class="complaint-list-item-description">
+                                            <!--Descrição-->
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-3 col-xl-2 text-md-right">
-                                        <div class="complaint-list-item-details">
-                                            <h5 class="float-left float-md-none"><i class="far fa-file-alt"></i>
-                                                46899020</h5>
-                                            <div class="complaints-list-status-holder float-right float-md-none"><span
-                                                    class="badge badge-pill badge-warning">Resolvida</span></div>
+                                    <div class="complaint-list-item-footer">
+                                        <span id="datePost" class="mr-3"> 00/00/0000 </span><span class="mr-3">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 col-xl-2 text-md-right">
+                                    <div class="complaint-list-item-details">
+                                        <h5 id="idPost" class="float-left float-md-none"><i class="far fa-file-alt"></i>
+                                            00000000</h5>
+                                        <div class="complaints-list-status-holder float-right float-md-none"><span
+                                                class="badge badge-pill badge-warning">Resolvida</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +199,7 @@
                             <img src="/Img/logo.png" alt="logo" width="200">
                         </div>
                         <div class="col-lg-3 col-sm-12 mt-4 mt-lg-0">
-                            <h4>Consumers Trust</h4>
+                            <h4>Informações</h4>
                             <ul class="list-unstyled">
                                 <li><a href=""><span>&gt;</span> Sobre nós</a></li>
                                 <li><a href=""><span>&gt;</span> Perguntas frequentes</a></li>
@@ -228,6 +225,15 @@
             </div>
         </footer>
         <!-- FIM FOOTER -->
+        <script>
+    document.getElementById('nomeUser').innerHTML = db.dados[0].perfil;
+    document.getElementById('cabecalho').innerHTML = db.dados[0].titulo;
+    document.getElementById('descricao').innerHTML = `<p id="descricao">${db.dados[0].descricao.substring(0,150)}<a href="">...Ler reclamação</a></p>`;
+    document.getElementById('imagePost').innerHTML = `<img id="imagePost" src="${db.dados[0].imagem}" class="img-fluid">`;
+    document.getElementById('datePost').innerHTML = db.dados[0].data;
+    document.getElementById('zonaPost').innerHTML = db.dados[0].zona;
+    document.getElementById('idPost').innerHTML = db.dados[0].id;
+        </script>
 
 </body>
 

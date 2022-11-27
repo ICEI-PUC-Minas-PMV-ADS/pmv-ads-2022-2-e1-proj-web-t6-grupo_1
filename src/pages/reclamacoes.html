@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/Img/logo.png" type="image/x-icon">
   <link href="/css/Style.css" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -55,7 +56,6 @@
     // Associa ao evento de carga da página a função para verificar se o usuário está logado
     window.addEventListener('load', initPage);
   </script>
-
 </head>
 
 <body>
@@ -115,7 +115,7 @@
               <img src="/Img/logo.png" alt="logo" width="200">
             </div>
             <div class="col-lg-3 col-sm-12 mt-4 mt-lg-0">
-              <h4>Consumers Trust</h4>
+              <h4>Informações</h4>
               <ul class="list-unstyled">
                 <li><a href=""><span>&gt;</span> Sobre nós</a></li>
                 <li><a href=""><span>&gt;</span> Perguntas frequentes</a></li>
@@ -144,7 +144,7 @@
     <script>
       var rec = '';
       for (i = 0; i < db.dados.length; i++) {
-        rec += `<a class="complaint-list-item-anchor" href="#" title="${db.dados[i].titulo}">
+        rec += `<a class="complaint-list-item-anchor" href="${db.dados[i].linkreclam}" title="${db.dados[i].titulo}">
 	<div class="complaint-list-item py-4 p-md-2" data-cid="839114">
 		<div class="row">
 			<div class="col-12 col-xl-3 d-none d-xl-block">
@@ -159,7 +159,7 @@
 						<span class="complaint-list-item-date-category">${db.dados[i].categoria} - ${db.dados[i].zona}</span>
 					</div>
 					<div class="complaint-list-item-description">
-						<p>${db.dados[i].descricao}</p>
+						<p>${db.dados[i].descricao.substring(0,150)}<i>...Ler Mais</i></p>
 					</div>
 				</div>
 				<div class="complaint-list-item-footer pb-2 pb-md-0">
@@ -169,7 +169,7 @@
 			<div class="col-12 col-md-3 col-xl-2 text-md-right">
 				<div class="complaint-list-item-details">
 					<h5 class="float-left float-md-none"><i class="far fa-file-alt"></i> ${db.dados[i].id}</h5>
-					<div class="complaints-list-status-holder float-right float-md-none"><span class="badge badge-pill badge-warning">Aguarda resposta</span></div>				</div>
+					<div class="complaints-list-status-holder float-right float-md-none"><span class="badge badge-pill badge-warning">${db.dados[i].situacao}</span></div></div>
 			</div>
 		</div>
 	</div>
